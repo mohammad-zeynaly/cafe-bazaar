@@ -8,7 +8,8 @@
 ## tips
 
 * fully responsive for mobile, tablet, laptop and desktop
-*
+* Tailwind CSS framework is used in this project
+* This is just an unofficial page of Cafe Bazar website!
 ---
 ## web development technologies
 * html 
