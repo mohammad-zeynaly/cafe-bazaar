@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "YekanBakh";
+    src: url("../font/YekanBakh-Medium.ttf") format("truetype"),
+    url("../font/YekanBakh-Medium.woff2") format("woff2");
+};
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

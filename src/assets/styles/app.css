@@ -1,0 +1,33 @@
+/* customize styles */
+.swiper-button-disabled{
+    display: none;
+}
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    background: transparent;
+    height: 4px;
+}
+
+.swiper-scrollbar-drag {
+    background: transparent;
+    background-color: #c5c4c4;
+}
+
+.swiper-wrapper{
+    margin-bottom: 1.2rem;
+}
+
+@media (min-width: 640px) {
+    .swiper-scrollbar-drag{
+        left: 10px;
+    }
+}
+
+@media (min-width: 1024px)  {
+    .swiper-scrollbar{
+        display: none;
+    }
+    .swiper-wrapper{
+        margin-bottom: 0;
+    }
+}
