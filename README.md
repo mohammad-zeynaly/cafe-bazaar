@@ -2,7 +2,7 @@
 ---
 
 # cafebazaar Website front-end !
-## [review online]()
+## [review online](https://mohammad-zeynali.github.io/cafe-bazaar/)
 
 ---
 ## tips
@@ -14,7 +14,7 @@
 ## web development technologies
 * html 
 * tailwindcss
-* java script (vanilla js + swiper(for slider))
+* java script (vanilla js , swiper(for slider))
 ---
 ## contact me
 * *[email](mailto:051.mhmdzynaly977@gmail.com)*
