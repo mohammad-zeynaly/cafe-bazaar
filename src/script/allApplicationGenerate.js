@@ -1,10 +1,65 @@
 //Select Dom Element
 const allAppsContainer = document.querySelector("#allApps");
-
+const paginationContainer = document.querySelector("#pagination");
 import allData from "./allData.js";
+let currentPage = 1;
+let paginatedApps = [];
+let pageSize = 24;
 
-function appsGenerator() {
-  allData.map((app) => {
+const changePaginatedApps = (newPageNumber) => {
+  currentPage = newPageNumber;
+  shownAppsPage();
+};
+
+const pageNumbers = Array.from(
+  Array(Math.ceil(allData.length / pageSize)).keys()
+);
+
+const shownAppsPage = () => {
+  let endIndex = currentPage * pageSize;
+  let startIndex = endIndex - pageSize;
+  const allShownApps = allData.slice(startIndex, endIndex);
+  paginatedApps = [];
+  paginatedApps.push(...allShownApps);
+  appsGenerator(paginatedApps);
+  paginationGenerator()
+};
+shownAppsPage();
+
+// All Pagination Generate
+function paginationGenerator() {
+    
+    paginationContainer.innerHTML = ""
+
+  pageNumbers.map((pageNum) => {
+    let paginatedBtn = document.createElement("button");
+
+    paginatedBtn.innerHTML = pageNum + 1;
+
+    if(paginatedBtn.innerHTML == currentPage){
+        paginatedBtn.className =
+        "bg-[#0ea960] cursor-pointer py-1 px-4 rounded-md text-white ml-2";
+     
+    }else{
+        paginatedBtn.className =
+        "bg-[#f5f5f5] cursor-pointer py-1 px-4 rounded-md ml-2";
+    }
+    paginatedBtn.addEventListener("click", () =>
+      changePaginatedApps(pageNum + 1)
+    );
+    paginationContainer.append(paginatedBtn);
+  });
+
+  console.log(pageNumbers);
+}
+
+paginationGenerator();
+
+// All Apps Generate In Append To Dom
+function appsGenerator(paginatedAppsArray) {
+    console.log("paginatedAppsArray=> ",paginatedAppsArray)
+  allAppsContainer.innerHTML = "";
+  paginatedAppsArray.map((app) => {
     allAppsContainer.insertAdjacentHTML(
       "beforeend",
       `
@@ -20,5 +75,6 @@ function appsGenerator() {
             </a>`
     );
   });
+  
 }
-appsGenerator();
+appsGenerator(paginatedApps);
