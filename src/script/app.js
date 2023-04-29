@@ -1,4 +1,4 @@
-import allAppData from "./allData.js"
+import { allAppData, categoriesItemData } from "./allData.js";
 // select Element To Dom
 const appPracticalContainer = document.querySelector("#app-practical"),
   appBankContainer = document.querySelector("#app-bank"),
@@ -21,7 +21,9 @@ const appPracticalContainer = document.querySelector("#app-practical"),
   bestSellerAppContainer = document.querySelector("#best-seller-app"),
   collapsContent = document.querySelector("#collaps-content"),
   collapsBtn = document.querySelector("#collaps-btn"),
-  collapsBtnIcon = document.querySelector("#collaps-btn svg");
+  collapsBtnIcon = document.querySelector("#collaps-btn svg"),
+  allCategoriesContainer = document.querySelector("#allCategories"),
+  mobileMenuItems = document.querySelectorAll(".mobile-nav-list__link");
 
 // setting slider apps
 const swiperSliderApps = new Swiper(".app-slider", {
@@ -89,7 +91,7 @@ const swiperSliderAds = new Swiper(".ads-app", {
   },
 });
 
-// generate All Apps 
+// generate All Apps
 function appsTemplateGenerate(appsInformationArray, appsContainer) {
   appsInformationArray.map((appsInformation) => {
     appsContainer.insertAdjacentHTML(
@@ -106,57 +108,90 @@ function appsTemplateGenerate(appsInformationArray, appsContainer) {
   });
 }
 
-function filteredAllAppData (appCategories) {
-  return allAppData.filter(appData => appData.categories === appCategories)
+function filteredAllAppData(appCategories) {
+  return allAppData.filter((appData) => appData.categories === appCategories);
 }
 
 function allAppsGenerate() {
   //generate Apps Practicals
-  appsTemplateGenerate(filteredAllAppData("applications"), appPracticalContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("applications"),
+    appPracticalContainer
+  );
 
   //generate Apps Practicals
   appsTemplateGenerate(filteredAllAppData("bankApps"), appBankContainer);
 
   //generate Apps Entertainment
-  appsTemplateGenerate(filteredAllAppData("entertainmentApps"), appEntertainmentContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("entertainmentApps"),
+    appEntertainmentContainer
+  );
 
   //generate Apps Social
   appsTemplateGenerate(filteredAllAppData("socialApps"), appSocialContainer);
 
   //generate Apps Musician
-  appsTemplateGenerate(filteredAllAppData("musicianApps"), appMusicianContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("musicianApps"),
+    appMusicianContainer
+  );
 
   //generate Apps Online Payment
-  appsTemplateGenerate(filteredAllAppData("paymentApps"), appOnlinePaymentContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("paymentApps"),
+    appOnlinePaymentContainer
+  );
 
   //generate Apps Antivirus
-  appsTemplateGenerate(filteredAllAppData("antivirusApps"), appAntivirusContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("antivirusApps"),
+    appAntivirusContainer
+  );
 
   //generate Apps Editors
   appsTemplateGenerate(filteredAllAppData("EditorsApps"), appEditorsContainer);
 
   //generate Update Editors Apps
-  appsTemplateGenerate(filteredAllAppData("EditorsUpdateApps"), updateEditorsContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("EditorsUpdateApps"),
+    updateEditorsContainer
+  );
 
   //generate English Apps
   appsTemplateGenerate(filteredAllAppData("languageApps"), appEnglishContainer);
 
   //generate Photo Editing
-  appsTemplateGenerate(filteredAllAppData("photoEditingApps"), editingAppContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("photoEditingApps"),
+    editingAppContainer
+  );
 
   //Generate Low Volum Apss
-  appsTemplateGenerate(filteredAllAppData("lowAppsVolume"), appLowVolumContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("lowAppsVolume"),
+    appLowVolumContainer
+  );
 
   //Generate Low Volum Apss
-  appsTemplateGenerate(filteredAllAppData("toolsApps"), appMobileToolsContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("toolsApps"),
+    appMobileToolsContainer
+  );
 
   //Generate Hottest Others Apss
-  appsTemplateGenerate(filteredAllAppData("hottestApps"), appsHottestOthersContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("hottestApps"),
+    appsHottestOthersContainer
+  );
 
   //Generate best Seller Apss
-  appsTemplateGenerate(filteredAllAppData("bestSellerApps"), bestSellerAppContainer);
+  appsTemplateGenerate(
+    filteredAllAppData("bestSellerApps"),
+    bestSellerAppContainer
+  );
 }
-allAppsGenerate()
+allAppsGenerate();
 
 // show other menu
 function showOtherMenu() {
@@ -208,7 +243,41 @@ function showCollapsContent() {
   }
 }
 
+function categoriesTemplateGenerate() {
+  allCategoriesContainer.innerHTML = "";
+
+  categoriesItemData.map((category) => {
+    allCategoriesContainer.insertAdjacentHTML(
+      "beforeend",
+      `
+  <a href="categoriesApp.html?title=${category.title}" title="${category.title}" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">  
+    <div class="categories-icon flex items-center mr-3">
+      ${category.icon}
+      <span class="mr-1">${category.title}</span>
+    </div>
+    <div class="flex ml-4">
+      <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 7L9 12L14 17" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+  </a>
+    `
+    );
+  });
+}
+categoriesTemplateGenerate();
+
+
+function mobileMenuItemActiveHandler (menuItem) {
+  for(let menuItem of mobileMenuItems){
+    menuItem.classList.remove("active--link")
+  }
+
+  menuItem.classList.add("active--link")
+}
+
 // Set Events
 otherDropdown.addEventListener("click", showOtherMenu);
 languageBtn.addEventListener("click", showLanguageMenu);
 collapsBtn.addEventListener("click", showCollapsContent);
+mobileMenuItems.forEach(menuItem => menuItem.addEventListener("click",() => mobileMenuItemActiveHandler(menuItem)))

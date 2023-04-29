@@ -1,7 +1,7 @@
 //Select Dom Element
 const allAppsContainer = document.querySelector("#allApps");
 const paginationContainer = document.querySelector("#pagination");
-import allData from "./allData.js";
+import {allAppData} from "./allData.js";
 let currentPage = 1;
 let paginatedApps = [];
 let pageSize = 24;
@@ -12,13 +12,13 @@ const changePaginatedApps = (newPageNumber) => {
 };
 
 const pageNumbers = Array.from(
-  Array(Math.ceil(allData.length / pageSize)).keys()
+  Array(Math.ceil(allAppData.length / pageSize)).keys()
 );
 
 const shownAppsPage = () => {
   let endIndex = currentPage * pageSize;
   let startIndex = endIndex - pageSize;
-  const allShownApps = allData.slice(startIndex, endIndex);
+  const allShownApps = allAppData.slice(startIndex, endIndex);
   paginatedApps = [];
   paginatedApps.push(...allShownApps);
   appsGenerator(paginatedApps);
