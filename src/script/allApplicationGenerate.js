@@ -38,11 +38,11 @@ function paginationGenerator() {
 
     if(paginatedBtn.innerHTML == currentPage){
         paginatedBtn.className =
-        "bg-[#0ea960] cursor-pointer py-1 px-4 rounded-md text-white ml-2";
+        "bg-[#0ea960] cursor-pointer py-1 px-4 rounded-md text-white ml-2 mb-4";
      
     }else{
         paginatedBtn.className =
-        "bg-[#f5f5f5] cursor-pointer py-1 px-4 rounded-md ml-2";
+        "bg-[#f5f5f5] cursor-pointer py-1 px-4 rounded-md ml-2 mb-4";
     }
     paginatedBtn.addEventListener("click", () =>
       changePaginatedApps(pageNum + 1)
@@ -67,9 +67,9 @@ function appsGenerator(paginatedAppsArray) {
               <div class="w-24 h-24">
                 <img class="w-full h-full rounded-3xl object-cover" src=${app.img} alt="${app.title}" loading="lazy">
               </div>
-              <div class="flex flex-col">
+              <div class="flex flex-col mr-3">
     
-                <h4 class="whitespace-nowrap mt-2 overflow-hidden overflow-ellipsis px-1">${app.title}</h4>
+                <h4 class="sm:whitespace-nowrap mt-2 overflow-hidden overflow-ellipsis px-1">${app.title}</h4>
                 <p class="text-[#8a8a8a] text-xs whitespace-nowrap overflow-hidden overflow-ellipsis px-1 mt-2">${app.type}</p>
               </div>
             </a>`

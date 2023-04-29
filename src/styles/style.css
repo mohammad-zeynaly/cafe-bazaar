@@ -2221,6 +2221,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -3011,6 +3015,10 @@ video {
     gap: 1rem;
   }
 
+  .sm\:whitespace-nowrap {
+    white-space: nowrap;
+  }
+
   .sm\:rounded-lg {
     border-radius: 0.5rem;
   }
@@ -3062,6 +3070,10 @@ video {
   .sm\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .sm\:pb-6 {
+    padding-bottom: 1.5rem;
   }
 
   .sm\:pr-2 {
