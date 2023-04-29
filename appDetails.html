@@ -304,22 +304,6 @@
         <!-- Start Mobile Nav -->
         <div class="mobile-nav lg:hidden">
           <div class="mobile-nav-top flex justify-between items-center mt-2">
-            <button
-              class="bg-[#fafafa] rounded-lg w-11 h-9 flex justify-center items-center ml-5"
-            >
-              <svg
-                id="mobile-nav-btn"
-                width="24"
-                height="24"
-                fill="none"
-                class=""
-              >
-                <path
-                  d="M3.643 6.273h16.714A.631.631 0 0021 5.636.631.631 0 0020.357 5H3.643A.631.631 0 003 5.636c0 .358.281.637.643.637zm16.714 5.09H3.643A.631.631 0 003 12c0 .358.281.636.643.636h16.714A.631.631 0 0021 12a.631.631 0 00-.643-.636zm0 6.364H3.643a.631.631 0 00-.643.637c0 .358.281.636.643.636h16.714a.631.631 0 00.643-.636.631.631 0 00-.643-.637z"
-                  fill="#20222A"
-                ></path>
-              </svg>
-            </button>
             <div
               id="mobile-nav-input"
               class="relative flex items-center w-full"
@@ -397,7 +381,7 @@
               <div class="flex items-center">
                 <div class="w-24 sm:w-32 ml-4">
                   <img
-                  id="appImage"
+                    id="appImage"
                     class="w-full object-cover rounded-3xl"
                     src=""
                     alt="تصویر اپلیکیشن"
@@ -405,7 +389,9 @@
                 </div>
                 <div class="text-sm sm:text-base">
                   <h2 id="appName">دیوار</h2>
-                  <h3 id="appCategories" class="mt-2">دسته بندی: خرید و فروش</h3>
+                  <h3 id="appCategories" class="mt-2">
+                    دسته بندی: خرید و فروش
+                  </h3>
                 </div>
               </div>
               <button
@@ -419,22 +405,26 @@
               class="text-sm mt-8 flex justify-center overflow-x-auto"
             >
               <div
-                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6">
+                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6"
+              >
                 <h5>+۵۰۰ <span>هزار</span></h5>
                 <h5 class="text-[#8a8a8a] mt-1">نصب</h5>
               </div>
               <div
-                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6">
+                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6"
+              >
                 <h5>4.7</h5>
                 <h5 class="text-[#8a8a8a] mt-1">امتیاز</h5>
               </div>
               <div
-                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6">
-                <h5 id="categories" >خرید</h5>
+                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6"
+              >
+                <h5 id="categories">خرید</h5>
                 <h5 class="text-[#8a8a8a] mt-1">دسته بندی</h5>
               </div>
               <div
-                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6">
+                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6"
+              >
                 <h5 id="volume">17 مگابایت</h5>
                 <h5 class="text-[#8a8a8a] mt-1">حجم</h5>
               </div>
@@ -708,7 +698,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white pt-12 hidden lg:pt-16 lg:block">
+    <footer class="bg-white pt-12 lg:pt-16">
       <!-- Start Desktop Footer-->
       <div class="footer hidden lg:block">
         <div class="container sm:px-4">
@@ -882,24 +872,20 @@
             class="bottom-menu__items sm:w-3/4 mx-auto flex justify-between items-center h-14 select-none"
           >
             <div class="w-1/3">
-              <a href="#" class="flex flex-col items-center justify-center">
-                <svg
-                  class=""
-                  width="24"
-                  height="24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22.956 16l-1.168-7.536a4.24 4.24 0 00-1.168-2.357 4.607 4.607 0 00-2.266-1.321 30.328 30.328 0 00-3.16-.572A26.944 26.944 0 0012 4c-.893 0-2.026.071-3.194.214-1.168.143-2.267.357-3.16.536-.893.25-1.683.714-2.266 1.357-.584.643-1.03 1.429-1.168 2.357L1.044 16c-.172 1.071.172 2.036.79 2.786A3.485 3.485 0 004.513 20a4.04 4.04 0 002.301-.75 3.84 3.84 0 001.442-1.929l.138-.357.103-.393h7.006l.103.393.137.357a3.84 3.84 0 001.443 1.929c.653.5 1.477.75 2.301.75a3.485 3.485 0 002.679-1.214c.618-.75.962-1.75.79-2.786zm-1.614 2.036c-.447.535-1.134.821-1.855.821-.584 0-1.202-.178-1.683-.536a3.022 3.022 0 01-1.03-1.357l-.137-.393-.104-.392c-.171-.429-.583-.75-1.03-.75H8.497c-.447 0-.859.321-1.03.75l-.103.392-.138.393c-.206.536-.55 1-1.03 1.357-.481.358-1.1.536-1.683.536-.721 0-1.408-.286-1.855-.821a2.287 2.287 0 01-.515-1.857l.584-3.786.55-3.75c.137-.643.412-1.25.892-1.75a3.238 3.238 0 011.752-1c.79-.214 1.855-.393 3.022-.536 1.168-.143 2.233-.214 3.057-.214.824 0 1.889.071 3.057.214 1.167.143 2.232.322 3.022.536h.034c.653.178 1.271.5 1.718 1 .48.5.755 1.107.893 1.75l.549 3.75.584 3.821a2.245 2.245 0 01-.515 1.822zm-5.495-6.322a.813.813 0 00-.584.25.879.879 0 00-.24.607c0 .25.102.465.24.608.137.142.343.25.584.25.24 0 .446-.108.583-.25a.88.88 0 00.24-.608.879.879 0 00-.24-.607.813.813 0 00-.583-.25zm2.198-3.428a.813.813 0 00-.584.25.879.879 0 00-.24.607c0 .25.102.464.24.607.137.143.343.25.584.25.24 0 .446-.107.583-.25a.879.879 0 00.24-.607.879.879 0 00-.24-.607.813.813 0 00-.583-.25zm-8.243 2H8.153V8.57A.554.554 0 007.603 8c-.308 0-.549.25-.549.571v1.715H5.406c-.31 0-.55.25-.55.571 0 .322.24.572.55.572h1.648v1.714c0 .321.24.571.55.571.309 0 .55-.25.55-.571v-1.714h1.648c.31 0 .55-.25.55-.572a.554.554 0 00-.55-.571z"
-                    fill="#717485"
-                  ></path>
-                </svg>
-                <span class="text-[#717485] hover:text-[#2a2a2a]">بازی</span>
+              <a href="./index.html" class="flex flex-col items-center justify-center">
+                <svg fill="#717485" width="22px" height="22px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"></path>
+              </svg>
+                
+                <span class="text-[#717485] mt-1 hover:text-[#2a2a2a] relative">خانه
+                  <div
+                    class=""
+                  ></div>
+                </span>
               </a>
             </div>
             <div class="w-1/3">
-              <a href="#" class="flex flex-col items-center justify-center">
+              <a href="./allApps.html" class="flex flex-col items-center justify-center">
                 <svg class="" width="24" height="24" fill="none">
                   <path
                     d="M5.482 2A3.477 3.477 0 002 5.472v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473V5.472A3.477 3.477 0 007.663 2H5.482zM16.336 2a3.477 3.477 0 00-3.481 3.472v2.176a3.477 3.477 0 003.481 3.473h2.182A3.477 3.477 0 0022 7.648V5.472A3.477 3.477 0 0018.518 2h-2.182zM5.482 12.825A3.477 3.477 0 002 16.297v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473v-2.176a3.477 3.477 0 00-3.482-3.472H5.482zM16.336 12.88a3.477 3.477 0 00-3.481 3.472v2.176A3.477 3.477 0 0016.335 22h2.182A3.477 3.477 0 0022 18.528v-2.176a3.477 3.477 0 00-3.482-3.473h-2.182z"
@@ -909,22 +895,26 @@
                 <span class="relative"
                   >برنامه
                   <div
-                    class="w-9 h-1 bg-[#0ea960] rounded-lg rounded-br-none rounded-bl-none absolute right-[2px]"
+                    class="bottom-menu__item--active"
                   ></div>
                 </span>
               </a>
             </div>
+            
             <div class="w-1/3">
-              <a href="" class="flex flex-col items-center justify-center">
+              <a href="./allApps.html" class="flex flex-col items-center justify-center">
                 <svg class="" width="24" height="24" fill="none">
                   <path
                     d="M11.57 16.844A.588.588 0 0012 17c.156 0 .313-.04.43-.156l5.625-5a.662.662 0 00.039-.899.662.662 0 00-.899-.039l-4.57 4.063V2.625A.617.617 0 0012 2a.617.617 0 00-.625.625v12.344l-4.57-4.063a.662.662 0 00-.899.04.662.662 0 00.04.898l5.624 5zM19.5 14.5h-1.875a.617.617 0 00-.625.625c0 .352.273.625.625.625H19.5c.703 0 1.25.547 1.25 1.25v2.5c0 .703-.547 1.25-1.25 1.25h-15c-.703 0-1.25-.547-1.25-1.25V17c0-.703.547-1.25 1.25-1.25h1.875A.617.617 0 007 15.125a.617.617 0 00-.625-.625H4.5A2.518 2.518 0 002 17v2.5C2 20.867 3.133 22 4.5 22h15c1.367 0 2.5-1.133 2.5-2.5V17c0-1.367-1.133-2.5-2.5-2.5zm-.313 3.75a.95.95 0 00-.937-.938.95.95 0 00-.938.938c0 .508.43.938.938.938a.95.95 0 00.938-.938z"
                     fill="#717485"
                   ></path>
                 </svg>
-                <span class="text-[#717485] hover:text-[#2a2a2a]"
-                  >نصب بازار</span
-                >
+                <span class="relative"
+                  >نصب بازار
+                  <div
+                    class=""
+                  ></div>
+                </span>
               </a>
             </div>
           </div>
