@@ -22,6 +22,7 @@
 * page Home 
 * page appDetails
 * page allApplication
+* page categoryApplication
 ---
 
 ## contact me

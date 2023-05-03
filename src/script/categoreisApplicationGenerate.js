@@ -17,6 +17,8 @@ function appsCategoriesGenerator() {
   // if()
   allAppsContainer.innerHTML = "";
   applicationsCategoriesArray.map((app) => {
+
+
     allAppsContainer.insertAdjacentHTML(
       "beforeend",
       `
