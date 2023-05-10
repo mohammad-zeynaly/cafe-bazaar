@@ -13,8 +13,9 @@
     <title>جزئیات برنامه</title>
   </head>
   <body class="font-YekanBakh bg-white sm:bg-[#F9FAFD] text-secondary relative">
-    <!--- Header --->
-    <header
+
+<!--- Header --->
+<header
       class="bg-white lg:shadow-[0_2px_12px_rgba(0,0,0,0.1)] py-1 fixed top-0 left-0 w-full z-50 border-b border-solid border-[#0000001a]"
     >
       <div class="container px-4">
@@ -81,64 +82,50 @@
                 </svg>
               </a>
               <li class="ml-7 relative">
-                <a class="text-[#2A2A2E]" href="#">برنامه</a>
-                <div
-                  class="w-9 h-1 bg-primary rounded-lg rounded-br-none rounded-bl-none mt-[20px] absolute"
-                ></div>
+                <a
+                  class="text-[#2A2A2E] desktop-nav-list__link active--link"
+                  href="#editors-app"
+                  >برنامه</a
+                >
               </li>
               <li class="ml-7">
                 <a
-                  class="text-[#neutral] transition-colors duration-150 hover:text-[#2A2A2E]"
-                  href="#"
+                  class="desktop-nav-list__link text-neutral transition-colors duration-150 hover:text-[#2A2A2E]"
+                  href="#Musician"
                   >بازی</a
                 >
-                <div
-                  class="hidden border-2 border-primary rounded-xl translate-y-[18px]"
-                ></div>
               </li>
               <li class="ml-7">
                 <a
-                  class="text-[#neutral] transition-colors duration-150 hover:text-[#2A2A2E]"
-                  href="#"
+                  class="desktop-nav-list__link text-neutral transition-colors duration-150 hover:text-[#2A2A2E]"
+                  href="#footer"
                   >پشتیانی</a
                 >
-                <div
-                  class="hidden border-2 border-primary rounded-xl translate-y-[18px]"
-                ></div>
               </li>
               <li class="ml-7 hidden 2xl:block">
                 <a
-                  class="text-[#neutral] transition-colors duration-150 hover:text-[#2A2A2E]"
+                  class="desktop-nav-list__link text-neutral transition-colors duration-150 hover:text-[#2A2A2E]"
                   href="#"
                   >توسعه دهندگان بازار</a
                 >
-                <div
-                  class="hidden border-2 border-primary rounded-xl translate-y-[18px]"
-                ></div>
               </li>
               <li class="ml-7 hidden 2xl:block">
                 <a
-                  class="text-[#neutral] transition-colors duration-150 hover:text-[#2A2A2E]"
+                  class="desktop-nav-list__link text-neutral transition-colors duration-150 hover:text-[#2A2A2E]"
                   href="#"
                   >تبلیغات در بازار</a
                 >
-                <div
-                  class="hidden border-2 border-primary rounded-xl translate-y-[18px]"
-                ></div>
               </li>
               <li class="ml-7 hidden 2xl:block">
                 <a
-                  class="text-[#neutral] transition-colors duration-150 hover:text-[#2A2A2E]"
+                  class="desktop-nav-list__link text-neutral transition-colors duration-150 hover:text-[#2A2A2E]"
                   href="#"
                   >فرصت های شغلی</a
                 >
-                <div
-                  class="hidden border-2 border-primary rounded-xl translate-y-[18px]"
-                ></div>
               </li>
               <li class="2xl:hidden">
                 <a
-                  class="text-[#neutral] ml-5 transition-colors duration-150 hover:text-[#2A2A2E]"
+                  class="text-neutral ml-5 transition-colors duration-150 hover:text-[#2A2A2E]"
                   href="#"
                   id="other-dropDown"
                   >سایر</a
@@ -263,7 +250,6 @@
               <a
                 class="bg-primary transition-all duration-150 hover:bg-[#0da05b] px-4 py-2 text-white rounded-md text-sm ml-4"
                 href="#"
-                class=""
                 title=""
                 >دانلود بازار</a
               >
@@ -348,30 +334,35 @@
           <div class="mobile-nav-list mb-2 mt-5 sm:w-3/4 sm:mx-auto">
             <ul class="flex justify-between">
               <li class="relative">
-                <a href="#" class="text-primary text-sm font-medium"
+                <a
+                  href="#"
+                  class="mobile-nav-list__link active--link text-sm font-medium"
                   >برای شما</a
                 >
-                <div
-                  class="w-9 h-1 bg-primary rounded-lg rounded-br-none rounded-bl-none mt-[8px] absolute right-[6px]"
-                ></div>
               </li>
-              <li class="">
-                <a href="#" class="text-[#neutral] text-sm font-medium"
+              <li class="relative">
+                <a
+                  href="#allCategories"
+                  class="mobile-nav-list__link text-neutral text-sm font-medium"
                   >دسته بندی ها</a
                 >
               </li>
-              <li class="">
-                <a href="#" class="text-[#neutral] text-sm font-medium">کودک</a>
+              <li class="relative">
+                <a
+                  href="#Musician"
+                  class="mobile-nav-list__link text-neutral text-sm font-medium"
+                  >کودک</a
+                >
               </li>
             </ul>
           </div>
         </div>
         <!-- End Mobile Nav -->
       </div>
-    </header>
+</header>
 
-    <!-- Main App Details -->
-    <main class="main mt-44 sm:my-16 sm:mt-32">
+<!-- Main App Details -->
+<main class="main mt-44 sm:my-16 sm:mt-32">
       <section class="app-details">
         <div class="container px-4">
           <div
@@ -695,10 +686,10 @@
           </div>
         </div>
       </section>
-    </main>
+</main>
 
-    <!-- Footer -->
-    <footer class="bg-white pt-12 lg:pt-16">
+<!-- Footer -->
+<footer class="bg-white pt-12 lg:pt-16">
       <!-- Start Desktop Footer-->
       <div class="footer hidden lg:block">
         <div class="container sm:px-4">
@@ -872,20 +863,34 @@
             class="bottom-menu__items sm:w-3/4 mx-auto flex justify-between items-center h-14 select-none"
           >
             <div class="w-1/3">
-              <a href="./index.html" class="flex flex-col items-center justify-center">
-                <svg fill="#717485" width="22px" height="22px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"></path>
-              </svg>
-                
-                <span class="text-[#717485] mt-1 hover:text-secondary relative">خانه
-                  <div
-                    class=""
-                  ></div>
+              <a
+                href="./index.html"
+                class="flex flex-col items-center justify-center"
+              >
+                <svg
+                  fill="#717485"
+                  width="22px"
+                  height="22px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"
+                  ></path>
+                </svg>
+
+                <span class="text-[#717485] mt-1 hover:text-secondary relative"
+                  >خانه
+                  <div class=""></div>
                 </span>
               </a>
             </div>
             <div class="w-1/3">
-              <a href="./allApps.html" class="flex flex-col items-center justify-center">
+              <a
+                href="./allApps.html"
+                class="flex flex-col items-center justify-center"
+              >
                 <svg class="" width="24" height="24" fill="none">
                   <path
                     d="M5.482 2A3.477 3.477 0 002 5.472v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473V5.472A3.477 3.477 0 007.663 2H5.482zM16.336 2a3.477 3.477 0 00-3.481 3.472v2.176a3.477 3.477 0 003.481 3.473h2.182A3.477 3.477 0 0022 7.648V5.472A3.477 3.477 0 0018.518 2h-2.182zM5.482 12.825A3.477 3.477 0 002 16.297v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473v-2.176a3.477 3.477 0 00-3.482-3.472H5.482zM16.336 12.88a3.477 3.477 0 00-3.481 3.472v2.176A3.477 3.477 0 0016.335 22h2.182A3.477 3.477 0 0022 18.528v-2.176a3.477 3.477 0 00-3.482-3.473h-2.182z"
@@ -894,15 +899,16 @@
                 </svg>
                 <span class="relative"
                   >برنامه
-                  <div
-                    class="bottom-menu__item--active"
-                  ></div>
+                  <div class="bottom-menu__item--active"></div>
                 </span>
               </a>
             </div>
-            
+
             <div class="w-1/3">
-              <a href="https://cafebazaar.ir/install" class="flex flex-col items-center justify-center">
+              <a
+                href="https://cafebazaar.ir/install"
+                class="flex flex-col items-center justify-center"
+              >
                 <svg class="" width="24" height="24" fill="none">
                   <path
                     d="M11.57 16.844A.588.588 0 0012 17c.156 0 .313-.04.43-.156l5.625-5a.662.662 0 00.039-.899.662.662 0 00-.899-.039l-4.57 4.063V2.625A.617.617 0 0012 2a.617.617 0 00-.625.625v12.344l-4.57-4.063a.662.662 0 00-.899.04.662.662 0 00.04.898l5.624 5zM19.5 14.5h-1.875a.617.617 0 00-.625.625c0 .352.273.625.625.625H19.5c.703 0 1.25.547 1.25 1.25v2.5c0 .703-.547 1.25-1.25 1.25h-15c-.703 0-1.25-.547-1.25-1.25V17c0-.703.547-1.25 1.25-1.25h1.875A.617.617 0 007 15.125a.617.617 0 00-.625-.625H4.5A2.518 2.518 0 002 17v2.5C2 20.867 3.133 22 4.5 22h15c1.367 0 2.5-1.133 2.5-2.5V17c0-1.367-1.133-2.5-2.5-2.5zm-.313 3.75a.95.95 0 00-.937-.938.95.95 0 00-.938.938c0 .508.43.938.938.938a.95.95 0 00.938-.938z"
@@ -911,9 +917,7 @@
                 </svg>
                 <span class="relative"
                   >نصب بازار
-                  <div
-                    class=""
-                  ></div>
+                  <div class=""></div>
                 </span>
               </a>
             </div>
@@ -921,8 +925,8 @@
         </div>
       </div>
       <!-- End Botoom Menu-->
-    </footer>
+</footer>
 
-    <script type="module" src="./src/script/applicationDetails.js"></script>
+  <script type="module" src="./src/script/applicationDetails.js"></script>
   </body>
 </html>

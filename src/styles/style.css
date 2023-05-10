@@ -2411,17 +2411,14 @@ video {
   color: rgb(138 138 138 / var(--tw-text-opacity));
 }
 
-.text-\[\#neutral\] {
-  color: #neutral;
-}
-
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .text-neutral {
-  color: #neutral;
+  --tw-text-opacity: 1;
+  color: rgb(107 107 107 / var(--tw-text-opacity));
 }
 
 .text-primary {
@@ -2644,12 +2641,6 @@ video {
 .shadow-\[0_2px_12px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
   --tw-shadow: 0 2px 12px rgba(0,0,0,0.1);
   --tw-shadow-colored: 0 2px 12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-\[0_4px_24px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
-  --tw-shadow: 0 4px 24px rgba(0,0,0,0.1);
-  --tw-shadow-colored: 0 4px 24px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2905,12 +2896,6 @@ video {
   opacity: 0.8;
 }
 
-.hover\:shadow-\[0_4px_24px_rgba\(0\2c 0\2c 0\2c 0\.1\)\]:hover {
-  --tw-shadow: 0 4px 24px rgba(0,0,0,0.1);
-  --tw-shadow-colored: 0 4px 24px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .hover\:shadow-mainShadow:hover {
   --tw-shadow: 0 4px 24px rgba(0,0,0,0.1);
   --tw-shadow-colored: 0 4px 24px var(--tw-shadow-color);
@@ -2972,6 +2957,11 @@ video {
   .sm\:my-16 {
     margin-top: 4rem;
     margin-bottom: 4rem;
+  }
+
+  .sm\:my-24 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 
   .sm\:mb-0 {
