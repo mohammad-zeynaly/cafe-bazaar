@@ -51,5 +51,10 @@
 .mobile-nav-list__link.active--link{
     color: #0ea960 !important;
     border-bottom: 4px solid #0ea960;
-    padding-bottom: 0.7rem;
+    padding-bottom: 0.6rem;
+    border-radius: .1rem;
+}
+
+.desktop-nav-list__link.active--link{
+    color: #0ea960 !important;
 }

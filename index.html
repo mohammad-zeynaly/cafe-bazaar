@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon"  href="./src/images/favicon.ico"><!-- Icon Website-->
     <link rel="stylesheet" href="./src/styles/swiper-bundle.min.css"><!-- Styles Swiper Js -->
-    <link rel="stylesheet" href="./src/styles/style-min.css"><!-- Tailwind Styles Minify -->
+    <link rel="stylesheet" href="./src/styles/style.css"><!-- Tailwind Styles Minify -->
     <link rel="stylesheet" href="./src/styles/app.css"> <!-- Custom Styles -->
     <title>کافه بازار </title>
 </head>
-<body class="font-YekanBakh bg-white sm:bg-[#F9FAFD] text-[#2a2a2a] relative">
+<body class="font-YekanBakh bg-white sm:bg-[#F9FAFD] text-secondary relative">
 
 
 <!--- Header --->
@@ -50,48 +50,42 @@
                     </svg>
                 </a>
                 <li class="ml-7 relative">
-                  <a class="text-[#2A2A2E] " href="#">برنامه</a>
-                    <div class="w-9	h-1 bg-[#0ea960] rounded-lg rounded-br-none rounded-bl-none mt-[20px] absolute"></div>
+                  <a class="text-[#2A2A2E] desktop-nav-list__link active--link" href="#editors-app">برنامه</a>
                 </li>
-                <li class="ml-7"><a class="text-[#6b6b6b] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">بازی</a>
-                <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
+                <li class="ml-7"><a class="desktop-nav-list__link text-[#neutral] transition-colors duration-150 hover:text-[#2A2A2E]" href="#Musician">بازی</a>
                 </li>
-                <li class="ml-7"><a class="text-[#6b6b6b] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">پشتیانی</a>
-                <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
+                <li class="ml-7"><a class="desktop-nav-list__link text-[#neutral] transition-colors duration-150 hover:text-[#2A2A2E]" href="#footer">پشتیانی</a>
                 </li>
-                <li class="ml-7 hidden 2xl:block"><a class="text-[#6b6b6b] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">توسعه دهندگان بازار</a>
-                  <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
+                <li class="ml-7 hidden 2xl:block"><a class="desktop-nav-list__link text-[#neutral] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">توسعه دهندگان بازار</a>
                 </li>
-                <li class="ml-7 hidden 2xl:block"><a class="text-[#6b6b6b] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">تبلیغات در بازار</a>
-                  <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
+                <li class="ml-7 hidden 2xl:block"><a class="desktop-nav-list__link text-[#neutral] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">تبلیغات در بازار</a>
                 </li>
-                <li class="ml-7 hidden 2xl:block"><a class="text-[#6b6b6b] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">فرصت های شغلی</a>
-                  <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
+                <li class="ml-7 hidden 2xl:block"><a class="desktop-nav-list__link text-[#neutral] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">فرصت های شغلی</a>
                   </li>
-                <li class="2xl:hidden"><a class="text-[#6b6b6b] ml-5 transition-colors duration-150 hover:text-[#2A2A2E]" href="#" id="other-dropDown">سایر</a>
-                  <div id="other-menu" class="bg-white p-3 rounded-lg shadow-[0_4px_24px_rgba(0,0,0,0.1)] z-40 absolute mt-7 transition-all duration-150 opacity-0">
+                <li class="2xl:hidden"><a class="text-[#neutral] ml-5 transition-colors duration-150 hover:text-[#2A2A2E]" href="#" id="other-dropDown">سایر</a>
+                  <div id="other-menu" class="bg-white p-3 rounded-lg shadow-mainShadow z-40 absolute mt-7 transition-all duration-150 opacity-0">
                     <ul class="drop-down flex flex-col">
                       <li class="drop-down__item group flex justify-between px-2 py-3 w-44 rounded-lg hover:bg-[#f1f2f9]">
-                        <a class="hover:text[#2a2a2a]" href="#">توسعه دهندگان بازار</a>
+                        <a class="hover:textsecondary" href="#">توسعه دهندگان بازار</a>
                         <svg class="hidden group-hover:block" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M14 7L9 12L14 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg>
                       </li>
                       <li class="drop-down__item group flex justify-between px-2 py-3 w-44 rounded-lg hover:bg-[#f1f2f9]">
-                        <a class="hover:text[#2a2a2a]" href="#">تبلیغات در بازار</a>
+                        <a class="hover:textsecondary" href="#">تبلیغات در بازار</a>
                         <svg class="hidden group-hover:block" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M14 7L9 12L14 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg>
                       </li>
                       <li class="drop-down__item group flex justify-between px-2 py-3 w-44 rounded-lg hover:bg-[#f1f2f9]">
-                        <a class="hover:text[#2a2a2a]" href="#">فرصت های شغلی </a>
+                        <a class="hover:textsecondary" href="#">فرصت های شغلی </a>
                         <svg class="hidden group-hover:block" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M14 7L9 12L14 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg>
                       </li>
                     </ul>
                   </div>
-                <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
+                <div class="hidden border-2 border-primary rounded-xl translate-y-[18px]"></div>
                 </li>
             </ul>
             <div class="flex items-center relative">
@@ -104,7 +98,7 @@
                     <path d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z" fill="#9da0af"></path>
                 </svg>
                 </a>
-                <a class="bg-[#0ea960] transition-all duration-150 hover:bg-[#0da05b] px-4 py-2 text-white rounded-md text-sm ml-4" href="#"  title="">دانلود بازار</a>
+                <a class="bg-primary transition-all duration-150 hover:bg-[#0da05b] px-4 py-2 text-white rounded-md text-sm ml-4" href="#"  title="">دانلود بازار</a>
                 
                 <button id="btn-language" class="p-2 hover:bg-[#f1f2f9]">
                     <svg id="theme-language"  width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
@@ -112,8 +106,8 @@
                     </svg>
                   </button>
 
-                  <div id="language-menu" class="bg-white rounded-lg p-2 shadow-[0_4px_24px_rgba(0,0,0,0.1)] z-40 absolute left-0 transition-all duration-150 w-48 mt-32 opacity-0">
-                    <a href="#" class="py-3 block px-1 text-[#2a2a2a] text-left hover:bg-[#f1f2f9] rounded-lg pl-2"> English version </a>
+                  <div id="language-menu" class="bg-white rounded-lg p-2 shadow-mainShadow z-40 absolute left-0 transition-all duration-150 w-48 mt-32 opacity-0">
+                    <a href="#" class="py-3 block px-1 text-secondary text-left hover:bg-[#f1f2f9] rounded-lg pl-2"> English version </a>
                   </div>
 
             </div>
@@ -141,10 +135,10 @@
               <a href="#" class="mobile-nav-list__link active--link text-sm font-medium">برای شما</a>
             </li>
             <li class="relative">
-              <a href="#allCategories" class="mobile-nav-list__link text-[#6b6b6b] text-sm font-medium">دسته بندی ها</a>
+              <a href="#allCategories" class="mobile-nav-list__link text-[#neutral] text-sm font-medium">دسته بندی ها</a>
             </li>
             <li class="relative">
-              <a href="#Musician" class="mobile-nav-list__link text-[#6b6b6b] text-sm font-medium">کودک</a>
+              <a href="#Musician" class="mobile-nav-list__link text-[#neutral] text-sm font-medium">کودک</a>
             </li>
           </ul>
         </div>
@@ -175,8 +169,8 @@
         <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
         <h2 class="py-2 sm:py-3 mr-4">برنامه های کاربردی</h2>
         <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="برنامه های کاربردی">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="group-hover:text-primary">بیشتر</span>
+          <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
@@ -188,8 +182,8 @@
             <!-- Render Js Template practical App-->
 
           </div>
-          <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-          <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+          <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+          <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
            <!-- Scroll Bar -->
            <div class="swiper-scrollbar"></div>
         </div>
@@ -207,8 +201,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
       <h2 class="py-2 sm:py-3 mr-4">برنامه‌های رسمی بانک‌های کشور</h2>
       <a href="./allApps.html" class="flex items-center ml-4 text-sm  group" title="برنامه های بانکی کشور">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="group-hover:text-primary">بیشتر</span>
+        <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
       </a>
@@ -220,8 +214,8 @@
           <!-- Render Js Template Bank App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -239,8 +233,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
       <h2 class="py-2 sm:py-3 mr-4">سرگرمی برای همه</h2>
       <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="سرگرمی برای همه">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="group-hover:text-primary">بیشتر</span>
+        <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
       </a>
@@ -252,8 +246,8 @@
           <!-- Render Js Template Entertainment App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -271,8 +265,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
       <h2 class="py-2 sm:py-3 mr-4">روی خط شبکه‌های اجتماعی</h2>
       <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="روی خط شبکه‌های اجتماعی">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="group-hover:text-primary">بیشتر</span>
+        <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
       </a>
@@ -284,8 +278,8 @@
           <!-- Render Js Template Social App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -303,8 +297,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
       <h2 class="py-2 sm:py-3 mr-4">نوازنده ساز محبوبت باش</h2>
       <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="نوازنده ساز محبوبت باش">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]"width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="group-hover:text-primary">بیشتر</span>
+        <svg class="stroke-secondary group-hover:stroke-primary"width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
       </a>
@@ -316,8 +310,8 @@
           <!-- Render Js Template Musician App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -335,8 +329,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
       <h2 class="py-2 sm:py-3 mr-4">بسته پرداخت آنلاین </h2>
       <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="بسته پرداخت آنلاین">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]"width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="group-hover:text-primary">بیشتر</span>
+        <svg class="stroke-secondary group-hover:stroke-primary"width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
       </a>
@@ -348,8 +342,8 @@
           <!-- Render Js Template Payment App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -367,8 +361,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
       <h2 class="py-2 sm:py-3 mr-4">به آنتی‌ویروس مجهز شو</h2>
       <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="به آنتی‌ویروس مجهز شو">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="group-hover:text-primary">بیشتر</span>
+        <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
       </a>
@@ -380,8 +374,8 @@
           <!-- Render Js Template Antivirus App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -402,24 +396,24 @@
     <div class="my-3 relative">
       <div class="swiper ads-app">
         <div class="swiper-wrapper" id="ads-app">
-          <a href="#" class="swiper-slide pr-0 sm:pr-2 transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide pr-0 sm:pr-2 transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/ads-app/ads-app-1.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/ads-app/ads-app-2.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/ads-app/ads-app-3.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/ads-app/ads-app-4.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide pl-2 transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide pl-2 transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/ads-app/ads-app-5.webp" loading="lazy" alt="تبلیغات">
           </a>
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -430,15 +424,15 @@
 </section>
 
 <!--- Section App Editors --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-editors">
+<section id="editors-app" class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-editors">
   <div class="container sm:px-4">
 
     <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
       <h2 class="py-2 sm:py-3 mr-4">برنامه‌های جدید منتخب سردبیران </h2>
       <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="برنامه‌های جدید منتخب سردبیران ">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="group-hover:text-primary">بیشتر</span>
+        <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
       </a>
@@ -450,8 +444,8 @@
           <!-- Render Js Template Editors App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -469,8 +463,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
       <h2 class="py-2 sm:py-3 mr-4">بروزرسانی‌های منتخب سردبیران</h2>
       <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="بروزرسانی‌های منتخب سردبیران">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="group-hover:text-primary">بیشتر</span>
+        <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
       </a>
@@ -482,8 +476,8 @@
           <!-- Render Js Template Update Editors -->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -501,8 +495,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
       <h2 class="py-2 sm:py-3 mr-4">زبان ارتباط رو انگلیسی کن</h2>
       <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="زبان ارتباط رو انگلیسی کن">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="group-hover:text-primary">بیشتر</span>
+        <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
       </a>
@@ -514,8 +508,8 @@
           <!-- Render Js Template English App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -536,39 +530,39 @@
     <div class="my-4 relative">
       <div class="swiper ads-app">
         <div class="swiper-wrapper" id="ads-app">
-          <a href="#" class="swiper-slide pr-0 sm:pr-2 transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide pr-0 sm:pr-2 transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-1.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-2.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-3.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-4.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-5.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-6.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-7.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-8.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-9.webp" loading="lazy" alt="تبلیغات">
           </a>
-          <a href="#" class="swiper-slide pl-2 transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+          <a href="#" class="swiper-slide pl-2 transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow">
             <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-10.webp" loading="lazy" alt="تبلیغات">
           </a>
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -586,8 +580,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
         <h2 class="py-2 sm:py-3 mr-4">ابزارهای ویرایش عکس</h2>
         <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="ابزارهای ویرایش عکس">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="group-hover:text-primary">بیشتر</span>
+          <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
@@ -599,8 +593,8 @@
           <!-- Render Js Template Photo Editing App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -618,8 +612,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
         <h2 class="py-2 sm:py-3 mr-4">برنامه‌های کم حجم</h2>
         <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="برنامه‌های کم حجم">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="group-hover:text-primary">بیشتر</span>
+          <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
@@ -631,8 +625,8 @@
           <!-- Render Js Template Low Volume App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -650,8 +644,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
         <h2 class="py-2 sm:py-3 mr-4">ابزارهای ضروری موبایل</h2>
         <a href="./allApps.html" class="flex items-center ml-4 text-sm  group" title="ابزارهای ضروری موبایل">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="group-hover:text-primary">بیشتر</span>
+          <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
@@ -663,8 +657,8 @@
           <!-- Render Js Template  Mobile tools App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -682,8 +676,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
         <h2 class="py-2 sm:py-3 mr-4">داغ‌ترین‌ها برای دیگران</h2>
         <a href="./allApps.html" class="flex items-center ml-4 text-sm group " title="داغ‌ترین‌ها برای دیگران">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="group-hover:text-primary">بیشتر</span>
+          <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
@@ -695,8 +689,8 @@
           <!-- Render Js Template Hottest Others  App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -714,8 +708,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
         <h2 class="py-2 sm:py-3 mr-4 ">برنامه‌های پرفروش</h2>
         <a href="./allApps.html" class="flex items-center ml-4 text-sm group" title="برنامه‌های پرفروش">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+          <span class="group-hover:text-primary">بیشتر</span>
+          <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
             <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
@@ -727,8 +721,8 @@
           <!-- Render Js Template Best Seller App-->
 
         </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
+        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#neutral] rounded-lg"></div>
+        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#neutral] rounded-lg"></div>
          <!-- Scroll Bar -->
          <div class="swiper-scrollbar"></div>
       </div>
@@ -745,8 +739,8 @@
       <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
         <h2 class="py-2 sm:py-3 mr-5 font-medium">دسته‌بندی‌های برنامه</h2>
         <a href="#" class="flex items-center ml-4 text-sm group" title="دسته‌بندی‌های برنامه">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="group-hover:text-primary">بیشتر</span>
+          <svg class="stroke-secondary group-hover:stroke-primary" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
@@ -903,36 +897,36 @@
 
 
 <!-- Footer -->
-<footer class="bg-white pt-12 lg:pt-16">
+<footer id="footer" class="bg-white pt-12 lg:pt-16">
   
 <!-- Start Desktop Footer-->
 <div class="footer hidden lg:block">
   <div class="container sm:px-4">
     <div id="footer" class="grid grid-cols-6 items-center">
       <ul class="flex flex-col">
-        <li class="mb-4"><a title="نصب بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">نصب بازار</a></li>
-        <li class="mb-4"><a title="بازی اندروید" href="#" class="transition-all duration-150 hover:text-[#0ea960]">بازی اندروید</a></li>
-        <li class="mb-4"><a title="برنامه اندروید" href="#" class="transition-all duration-150 hover:text-[#0ea960]">برنامه اندروید</a></li>
+        <li class="mb-4"><a title="نصب بازار" href="#" class="transition-all duration-150 hover:text-primary">نصب بازار</a></li>
+        <li class="mb-4"><a title="بازی اندروید" href="#" class="transition-all duration-150 hover:text-primary">بازی اندروید</a></li>
+        <li class="mb-4"><a title="برنامه اندروید" href="#" class="transition-all duration-150 hover:text-primary">برنامه اندروید</a></li>
       </ul>
       <ul class="flex flex-col">
-        <li class="mb-4"><a title="توسعه‌دهندگان بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">توسعه‌دهندگان بازار</a></li>
-        <li class="mb-4"><a title="فرصت‌های شغلی" href="#" class="transition-all duration-150 hover:text-[#0ea960]">فرصت‌های شغلی</a></li>
-        <li class="mb-4"><a title="نشان دریافت از بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">نشان دریافت از بازار</a></li>
+        <li class="mb-4"><a title="توسعه‌دهندگان بازار" href="#" class="transition-all duration-150 hover:text-primary">توسعه‌دهندگان بازار</a></li>
+        <li class="mb-4"><a title="فرصت‌های شغلی" href="#" class="transition-all duration-150 hover:text-primary">فرصت‌های شغلی</a></li>
+        <li class="mb-4"><a title="نشان دریافت از بازار" href="#" class="transition-all duration-150 hover:text-primary">نشان دریافت از بازار</a></li>
       </ul>
       <ul class="flex flex-col">
-        <li class="mb-4"><a title="شرایط استفاده" href="#" class="transition-all duration-150 hover:text-[#0ea960]">شرایط استفاده</a></li>
-        <li class="mb-4"><a title="حریم خصوصی" href="#" class="transition-all duration-150 hover:text-[#0ea960]">حریم خصوصی</a></li>
-        <li class="mb-4"><a title="پشتیبانی" href="#" class="transition-all duration-150 hover:text-[#0ea960]">پشتیبانی</a></li>
+        <li class="mb-4"><a title="شرایط استفاده" href="#" class="transition-all duration-150 hover:text-primary">شرایط استفاده</a></li>
+        <li class="mb-4"><a title="حریم خصوصی" href="#" class="transition-all duration-150 hover:text-primary">حریم خصوصی</a></li>
+        <li class="mb-4"><a title="پشتیبانی" href="#" class="transition-all duration-150 hover:text-primary">پشتیبانی</a></li>
       </ul>
       <ul class="flex flex-col">
-        <li class="mb-4"><a title="بلاگ بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">بلاگ بازار</a></li>
-        <li class="mb-4"><a title="خبرها و بیانیه‌های بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">خبرها و بیانیه‌های بازار</a></li>
-        <li class="mb-4"><a title="بلاگ فنی بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">بلاگ فنی بازار</a></li>
+        <li class="mb-4"><a title="بلاگ بازار" href="#" class="transition-all duration-150 hover:text-primary">بلاگ بازار</a></li>
+        <li class="mb-4"><a title="خبرها و بیانیه‌های بازار" href="#" class="transition-all duration-150 hover:text-primary">خبرها و بیانیه‌های بازار</a></li>
+        <li class="mb-4"><a title="بلاگ فنی بازار" href="#" class="transition-all duration-150 hover:text-primary">بلاگ فنی بازار</a></li>
       </ul>
       <ul class="flex flex-col">
-        <li class="mb-4"><a title="تبلیغات در بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">تبلیغات در بازار</a></li>
-        <li class="mb-4"><a title="درباره ما" href="#" class="transition-all duration-150 hover:text-[#0ea960]">درباره ما</a></li>
-        <li class="mb-4"><a title="تماس با ما" href="#" class="transition-all duration-150 hover:text-[#0ea960]">تماس با ما</a></li>
+        <li class="mb-4"><a title="تبلیغات در بازار" href="#" class="transition-all duration-150 hover:text-primary">تبلیغات در بازار</a></li>
+        <li class="mb-4"><a title="درباره ما" href="#" class="transition-all duration-150 hover:text-primary">درباره ما</a></li>
+        <li class="mb-4"><a title="تماس با ما" href="#" class="transition-all duration-150 hover:text-primary">تماس با ما</a></li>
       </ul>
       <div class="flex">
         <a href="" class=""><img class="object-cover" src="./src/images/Samandehi.webp" alt="Samandehi"></a>
@@ -965,7 +959,7 @@
               <path d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"></path>
           </svg>
             
-            <span class="text-[#2a2a2a] mt-1 hover:text-[#2a2a2a] relative">خانه
+            <span class="text-secondary mt-1 hover:text-secondary relative">خانه
               <div
                 class="bottom-menu__item--active"
               ></div>
@@ -973,7 +967,7 @@
           </a>
         </div>
         <div class="w-1/3">
-          <a href="../allApps.html" class="flex flex-col items-center justify-center">
+          <a href="./allApps.html" class="flex flex-col items-center justify-center">
             <svg class="" width="24" height="24" fill="none">
               <path
                 d="M5.482 2A3.477 3.477 0 002 5.472v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473V5.472A3.477 3.477 0 007.663 2H5.482zM16.336 2a3.477 3.477 0 00-3.481 3.472v2.176a3.477 3.477 0 003.481 3.473h2.182A3.477 3.477 0 0022 7.648V5.472A3.477 3.477 0 0018.518 2h-2.182zM5.482 12.825A3.477 3.477 0 002 16.297v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473v-2.176a3.477 3.477 0 00-3.482-3.472H5.482zM16.336 12.88a3.477 3.477 0 00-3.481 3.472v2.176A3.477 3.477 0 0016.335 22h2.182A3.477 3.477 0 0022 18.528v-2.176a3.477 3.477 0 00-3.482-3.473h-2.182z"
@@ -1009,7 +1003,7 @@
     </div>
   </div>
 
-  ><!-- End Botoom Menu-->
+  <!-- End Botoom Menu-->
 
 </footer>
 

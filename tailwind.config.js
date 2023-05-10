@@ -1,17 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // content: ["./src/**/*.{html,js}"],
   content: ["./**/*.{html,js}"],
-  
+
   theme: {
-    fontFamily : {
-      YekanBakh : ['YekanBakh']
-   },
+    fontFamily: {
+      YekanBakh: ["YekanBakh"],
+    },
+
     extend: {
-      container : {
-        center : true 
+
+      container: {
+        center: true,
       },
+
+      colors: {
+        primary: "#0ea960",
+        secondary: "#2a2a2a",
+        neutral: "#neutral",
+        shadow: "rgba(0,0,0,0.1)",
+      },
+
+      boxShadow: {
+        'mainShadow': "0 4px 24px rgba(0,0,0,0.1)",
+      },
+
     },
   },
   plugins: [],
-}
+};

@@ -23,7 +23,8 @@ const appPracticalContainer = document.querySelector("#app-practical"),
   collapsBtn = document.querySelector("#collaps-btn"),
   collapsBtnIcon = document.querySelector("#collaps-btn svg"),
   allCategoriesContainer = document.querySelector("#allCategories"),
-  mobileMenuItems = document.querySelectorAll(".mobile-nav-list__link");
+  mobileMenuItems = document.querySelectorAll(".mobile-nav-list__link"),
+  desktopMenuItem = document.querySelectorAll(".desktop-nav-list__link");
 
 // setting slider apps
 const swiperSliderApps = new Swiper(".app-slider", {
@@ -97,7 +98,7 @@ function appsTemplateGenerate(appsInformationArray, appsContainer) {
     appsContainer.insertAdjacentHTML(
       "beforeend",
       `
-    <a href="appDetails.html?id=${appsInformation.id}" title="${appsInformation.title}" class="rounded-lg px-2 py-2 transition-shadow duration-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)] swiper-slide">
+    <a href="appDetails.html?id=${appsInformation.id}" title="${appsInformation.title}" class="rounded-lg px-2 py-2 transition-shadow duration-150 hover:shadow-mainShadow swiper-slide">
     <div class="max-w-[120px] mx-auto">
       <img class="w-full h-full rounded-3xl object-cover" src="${appsInformation.img}" alt="${appsInformation.title}" loading="lazy">
     </div>
@@ -250,7 +251,7 @@ function categoriesTemplateGenerate() {
     allCategoriesContainer.insertAdjacentHTML(
       "beforeend",
       `
-  <a href="categoriesApp.html?title=${category.title}" title="${category.title}" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">  
+  <a href="categoriesApp.html?title=${category.title}" title="${category.title}" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-mainShadow">  
     <div class="categories-icon flex items-center mr-3">
       ${category.icon}
       <span class="mr-1">${category.title}</span>
@@ -276,8 +277,16 @@ function mobileMenuItemActiveHandler (menuItem) {
   menuItem.classList.add("active--link")
 }
 
+function desktopMenuItemActiveHandler (menuItem) {
+  for(let menuItem of desktopMenuItem){
+    menuItem.classList.remove("active--link")
+  }
+  menuItem.classList.add("active--link")
+}
+
 // Set Events
 otherDropdown.addEventListener("click", showOtherMenu);
 languageBtn.addEventListener("click", showLanguageMenu);
 collapsBtn.addEventListener("click", showCollapsContent);
 mobileMenuItems.forEach(menuItem => menuItem.addEventListener("click",() => mobileMenuItemActiveHandler(menuItem)))
+desktopMenuItem.forEach(menuItem => menuItem.addEventListener("click",() => desktopMenuItemActiveHandler(menuItem)))

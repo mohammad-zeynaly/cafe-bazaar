@@ -38,7 +38,7 @@ function paginationGenerator() {
 
     if(paginatedBtn.innerHTML == currentPage){
         paginatedBtn.className =
-        "bg-[#0ea960] cursor-pointer py-1 px-4 rounded-md text-white ml-2 mb-4";
+        "bg-primary cursor-pointer py-1 px-4 rounded-md text-white ml-2 mb-4";
      
     }else{
         paginatedBtn.className =
@@ -63,7 +63,7 @@ function appsGenerator(paginatedAppsArray) {
     allAppsContainer.insertAdjacentHTML(
       "beforeend",
       `
-            <a href="appDetails.html?id=${app.id}" title="${app.title}" class="flex sm:flex-col rounded-lg px-2 py-2 transition-shadow duration-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
+            <a href="appDetails.html?id=${app.id}" title="${app.title}" class="flex sm:flex-col rounded-lg px-2 py-2 transition-shadow duration-150 hover:shadow-mainShadow">
               <div class="w-24 h-24">
                 <img class="w-full h-full rounded-3xl object-cover" src=${app.img} alt="${app.title}" loading="lazy">
               </div>
