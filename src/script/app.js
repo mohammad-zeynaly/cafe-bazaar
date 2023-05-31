@@ -251,7 +251,7 @@ function categoriesTemplateGenerate() {
     allCategoriesContainer.insertAdjacentHTML(
       "beforeend",
       `
-  <a href="categoriesApp.html?title=${category.title}" title="${category.title}" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-mainShadow">  
+  <a href="CategoriesDetails.html?title=${category.title}" title="${category.title}" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-mainShadow">  
     <div class="categories-icon flex items-center mr-3">
       ${category.icon}
       <span class="mr-1">${category.title}</span>

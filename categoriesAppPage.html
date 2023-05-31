@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="fa" dir="rtl" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./src/images/favicon.ico" />
     <!-- Icon Website-->
+    <link rel="stylesheet" href="./src/styles/swiper-bundle.min.css" />
+    <!-- Styles Swiper Js -->
     <link rel="stylesheet" href="./src/styles/style.css" />
     <!-- Tailwind Styles Minify -->
     <link rel="stylesheet" href="./src/styles/app.css" />
     <!-- Custom Styles -->
-    <title>جزئیات برنامه</title>
+    <title>کافه بازار</title>
   </head>
   <body class="font-YekanBakh bg-white sm:bg-[#F9FAFD] text-secondary relative">
-
-<!--- Header --->
+    
+<!-- Header ---> 
 <header
       class="bg-white lg:shadow-[0_2px_12px_rgba(0,0,0,0.1)] py-1 fixed top-0 left-0 w-full z-50 border-b border-solid border-[#0000001a]"
     >
@@ -25,7 +27,7 @@
             <ul class="flex items-center">
               <a
                 class="ml-10 transition-all duration-150 hover:opacity-80"
-                href="./index.html"
+                href="#"
                 title="Home"
               >
                 <svg
@@ -336,14 +338,14 @@
               <li class="relative">
                 <a
                   href="#"
-                  class="mobile-nav-list__link active--link text-sm font-medium"
+                  class="mobile-nav-list__link  text-sm font-medium"
                   >برای شما</a
                 >
               </li>
               <li class="relative">
                 <a
                   href="./categoriesAppPage.html"
-                  class="mobile-nav-list__link text-neutral text-sm font-medium"
+                  class="mobile-nav-list__link text-neutral text-sm font-medium active--link"
                   >دسته بندی ها</a
                 >
               </li>
@@ -361,327 +363,46 @@
       </div>
 </header>
 
-<!-- Main App Details -->
-<main class="main mt-44 sm:my-16 sm:mt-32">
-      <section class="app-details">
-        <div class="container px-4">
+ <!--- Main --->
+<main class="main">
+      <!--- Section categories Program --->
+      <section class="categories-apps lg:mb-12 lg:mt-28 mt-36"><!--sm:mt-5-->
+        <div class="container sm:px-4">
           <div
-            class="w-full lg:max-w-4xl mx-auto bg-white rounded-xl text-right sm:p-8"
+            class="bg-white pb-4 sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
           >
-            <div class="flex justify-between items-center">
-              <div class="flex items-center">
-                <div class="w-24 sm:w-32 ml-4">
-                  <img
-                    id="appImage"
-                    class="w-full object-cover rounded-3xl"
-                    src=""
-                    alt="تصویر اپلیکیشن"
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-5 font-medium">
+                دسته‌بندی‌های برنامه
+              </h2>
+              <a
+                href="#"
+                class="flex items-center ml-4 text-sm group"
+                title="دسته‌بندی‌های برنامه"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
-                </div>
-                <div class="text-sm sm:text-base">
-                  <h2 id="appName">دیوار</h2>
-                  <h3 id="appCategories" class="mt-2">
-                    دسته بندی: خرید و فروش
-                  </h3>
-                </div>
-              </div>
-              <button
-                class="hidden sm:block bg-primary transition-all duration-150 hover:bg-[#0da05b] px-8 py-3 text-white rounded-md text-lg ml-4"
-              >
-                دانلود
-              </button>
+                </svg>
+              </a>
             </div>
-            <div
-              id="etailsBox"
-              class="text-sm mt-8 flex justify-center overflow-x-auto"
-            >
-              <div
-                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6"
-              >
-                <h5>+۵۰۰ <span>هزار</span></h5>
-                <h5 class="text-[#8a8a8a] mt-1">نصب</h5>
-              </div>
-              <div
-                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6"
-              >
-                <h5>4.7</h5>
-                <h5 class="text-[#8a8a8a] mt-1">امتیاز</h5>
-              </div>
-              <div
-                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6"
-              >
-                <h5 id="categories">خرید</h5>
-                <h5 class="text-[#8a8a8a] mt-1">دسته بندی</h5>
-              </div>
-              <div
-                class="w-24 flex flex-col items-center rounded-lg bg-[#f9fafd] p-2 ml-2 sm:ml-6"
-              >
-                <h5 id="volume">17 مگابایت</h5>
-                <h5 class="text-[#8a8a8a] mt-1">حجم</h5>
-              </div>
-            </div>
-            <button
-              class="block w-full mt-8 sm:hidden bg-primary transition-all duration-150 hover:bg-[#0da05b] px-8 py-3 text-white rounded-xl text-lg ml-4"
-            >
-              دانلود
-            </button>
-          </div>
-        </div>
-      </section>
+            <div id="allCategories" class="categories-items pt-4 mx-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4">
 
-      <!--- Section Articles  --->
-      <section class="collaps mt-10 mb-5">
-        <div class="container px-4">
-          <div
-            id="collaps-acordion"
-            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg sm:p-4 overflow-hidden relative"
-          >
-            <div
-              id="collaps-content"
-              class="collaps-expand overflow-hidden max-h-[230px] transition-all duration-150 mb-4"
-            >
-              <p class="mb-4">
-                به خودتان نگاهی بیندازید، آیا برای انجام هر کاری به گوشی خود سر
-                نمی‌زنید؟ آیا به‌دنبال
-                <strong>دانلود برنامه‌های اندرویدی</strong> نیستید که کارهایتان
-                را آسان‌تر کنند؟ ما در بازار
-                <strong>اپلیکیشن‌های اندروید</strong>، برای هر موضوعی که در ذهن
-                شماست، برنامه داریم و امکان نصب و دانلود آن‌ها را با اینترنت
-                نیم‌بها و با سپر امنیت بازار برایتان فراهم کرده‌ایم.
-              </p>
-              <p class="mb-6">
-                اپلیکیشن‌های بازار در ۲۰ دسته‌ی مختلف منظم شده‌اند که در ادامه
-                آن‌ها را برایتان معرفی می‌کنیم. کافی است موضوع مورد علاقه‌ی خود
-                را انتخاب کنید و از بین صدها برنامه هر دسته، بهترین و
-                کاربردی‌ترین اپ را دانلود کنید. فراموش نکنید که حتما به نظرات و
-                امتیازی (Rating) که کاربران به برنامه‌ها داده‌اند نیز توجه کنید
-                تا حافظه موبایل‌تان را با اپ‌های بهتری پر کنید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>دانلود برنامه‌های جدید اندرویدی</strong>
-              </h2>
-              <p class="mb-4">
-                در صفحه اصلی بازار می‌توانید برنامه‌های جدید منتخب سردبیران و
-                همینطور بروزرسانی‌های منتخب را ببینید و از هیچ برنامه جدیدی جا
-                نمانید. بازی‌های جدید نیز در صفحه بازی‌های اندرویدی بازار
-                به‌همین ترتیب مشخص هستند.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>برنامه‌های شبکه‌های اجتماعی</strong>
-              </h2>
-              <p class="mb-4">
-                امروز برای بسیاری از ما، گذران زندگی و کار بدون شبکه‌های اجتماعی
-                امکان‌پذیر مثل واتساپ، اینستاگرام، تلگرام، توییتر، یوتیوب و ...
-                نیست. هر برنامه‌ای که دوست دارید را انتخاب و ارتباط با جهان را
-                آغاز کنید. جدیدترین بروزرسانی این اپ‌های بسیار پرطرفدار نیز به
-                محض انتشار، در بازار قرار می‌گیرند و از طریق اطلاع‌رسانی‌ها
-                (نوتیفیکیشن) شما را مطلع می‌کنند.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>ابزارهای اندرویدی</strong>
-              </h2>
-              <p class="mb-4">
-                گوشی شما با برنامه‌های دسته‌ی ابزارهای بازار، آچار فرانسه‌ است.
-                از ماشین حساب، زنگ، یادآور و تقویم گرفته تا ابزارهای افزایش سرعت
-                گوشی، قفل برنامه‌ها، افزایش عمر باتری، ارزیابی سرعت و مصرف
-                اینترنت، تبدیل واحدها، بارکد ساز و بارکدخوان، قطب‌نما، چراغ قوه،
-                ساخت نسخه‌ی پشتیبان، دفتر یادداشت، آنتی ویروس‌ها، حافظه‌ی ابری و
-                بسیاری برنامه‌ی پرکاربرد دیگر.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>اپلیکیشن‌های عکاسی و ویدیو و فیلم‌برداری</strong>
-              </h2>
-              <p class="mb-4">
-                اگر دنبال برنامه‌هایی هستید که از گوشی خود بهتر و بیشتر استفاده
-                کنید، به دسته‌های شخصی‌سازی و عکاسی و ویدیو سر بزنید.
-                اپلیکیشن‌های تصاویر پس زمینه، قفل‌ها و برترین‌ برنامه‌های تغییر
-                فضای گوشی را از دسته‌ی شخصی‌سازی نصب کنید. برنامه‌های ویرایش و
-                ساخت عکس، ساخت ویدیو و چاپ عکس را نیز از دسته‌ي عکاسی و ویدیو
-                دانلود کنید و دنیای فیلترها و ابزارهای تدوین را تجربه کنید.
-              </p>
-              <p class="mb-4">
-                از ابزارهای شخصی‌سازی نیز غافل نشوید و گوشی خود را با آن‌ها، به
-                سبک خود تغییر دهید. مثلا زنگ گوشی، پس زمینه و صفحه کلید شخصی خود
-                را دانلود کنید و با قفل فایل‌ها و برنامه‌ها کنترل موبایل خود را
-                به دست بگیرید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>برنامه‌های امور مالی</strong>
-              </h2>
-              <p class="mb-4">
-                حوزه‌ی سرمایه و پول هر روز در حال تغییر و پیشرفت است. دسته‌ی
-                امور مالی برنامه‌های کاربردی‌ای مثل رمز پویا، روش‌های انتقال
-                پول، همراه بانک‌ها، حسابداری شخصی تا برنامه‌های تحلیلی بازار
-                بورس و سرمایه‌گذاری، فروش سهام عدالت، قوانین مالی و محاسبات
-                حقوقی، محاسبه سود سپرده و وام را پوشش می‌دهد. همینطور با کمک
-                برنامه‌های حسابداری شخصی، تحلیل بازار بورس و مالی می‌توانید
-                سرمایه‌ خود را مدیریت کنید و دخل و خرج‌تان را محاسبه کنید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>اپ‌های آموزشی</strong>
-              </h2>
-              <p class="mb-4">
-                آموزش مجازی این روزها حرف اول را می‌زند. اپلیکیشن‌هایی که
-                بتوانند سریع‌ترین و شیرین‌ترین روش یادگیری موضوعات مثل زبان
-                انگلیسی، آشپزی، درس‌های از دبستان تا کنکور، برنامه‌نویسی و
-                بسیاری موضوعات دیگر را در دسترس قرار دهند، بیشترین طرفدار را
-                دارند. این دسته، دنیایی از اپلیکیشن‌هاست که می‌توانید با دانلود
-                آن‌ها هر موضوعی را یاد بگیرید. معروف‌ترین و پرطرفدارترین برنامه
-                این دسته هم اپلیکیشن شاد مدارس است که دانش‌آموزان علاقه زیادی به
-                آن دارند.(!)
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>برنامه‌های موسیقی و صداگذاری</strong>
-              </h2>
-              <p class="mb-4">
-                برنامه‌های اندروید موسیقی، شما را به آخرین آلبوم‌ها و آهنگ‌های
-                روز متصل می‌کند. با کمک این اپ‌ها می‌توانید پلی‌لیست‌ شخصی‌های
-                خود را بسازید، روی ویدیوهای خود صدا بگذارید و اپلیکیشن‌های تغییر
-                صدای مختلف را ببینید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>بازار کودک</strong>
-              </h2>
-              <p class="mb-4">
-                بازی و یادگیری و برنامه، قصه، بازی‌های شاد و سرگرم کننده و
-                برترین اپلیکیشن‌های کودک در دسته‌ی کودک بازار، ویژه کودکان شما
-                است. امروز ارتباط کودکان با دنیای تکنولوژی غیرقابل انکار است. از
-                دسته‌ی کودک براحتی انتخاب کنید که دوست دارید کودک شما با کدام
-                برنامه‌‌ی اندرویدی، بازی کند و یاد بگیرد.
-              </p>
-              <p class="mb-4">
-                با فعال کردن «بازار کودک» از «بازار من» می‌توانید با خیال راحت
-                گوشی هوشمند خود را در اختیار کودکان قرار دهید و خیالتان راحت
-                باشد که محتواهای نامناسب برای فرزندتان نمایش داده نمی‌شود.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>اپ‌های سرگرمی</strong>
-              </h2>
-              <p class="mb-4">
-                داشتن گوشی هوشمند در عین حال که کاربردی است، سرگرم کننده هم هست.
-                برنامه‌های دسته‌ی سرگرمی طیف متفاوتی از اپلیکیشن‌هایی است که
-                می‌توانید بسته به حال و لحظه از بین آنها انتخاب کنید؛ اهل نقاشی
-                دیجیتال هستید؟ دوست دارید فیلم و سریال تماشا کنید؟ هر چیزی که
-                بخواهید را می‌توانید در این دسته‌بندی پیدا کنید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>برنامه‌های ورزشی</strong>
-              </h2>
-              <p class="mb-4">
-                با برنامه‌های اندرویدی بازار ببینید در دنیای ورزش چه می‌گذرد.
-                فوتبال، والیبال، لیگ برتر و جام حذفی، المپیک و حاشیه‌ی دنیای
-                ورزش، پخش زنده و هیاهوی بازی‌های فینال، برنامه‌های اخبار و پخش
-                زنده ورزشی، همه و همه در بازار موجود هستند.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>اپلیکیشن‌های مذهبی</strong>
-              </h2>
-              <p class="mb-4">
-                دسته‌ی مذهبی طیف گسترده‌ای ازبرنامه‌های کاربردی و تخصصی این حوزه
-                را در خود جای داده است. برنامه‌های پرکاربرد مذهبی مانند
-                تقویم‌های اذان‌گو و اوقات شرعی و برنامه‌های آموزش حفظ و تلاوت
-                قرآن، قرآن کتبی و صوتی، برنامه‌های ختم قرآن و حکایت‌های مذهبی را
-                در دسته‌ی مذهبی به راحتی پیدا و دانلود کنید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>برنامه‌های سفر</strong>
-              </h2>
-              <p class="mb-4">
-                بازار برنامه‌های اندروید، مقصد بی انتهایی است از اپلکیشن‌هایی که
-                سفر کردن را راحت‌ترمی‌کند. خرید بلیط هواپیما و قطار تا انتخاب
-                محل اقامت و تورهای مسافرتی، گردشگری و بوم‌گردی برنامه می‌خواهد.
-                در این سفر برنامه‌های مسیریاب،
-              </p>
-              <p class="mb-4">
-                از نقشه‌های مسیریاب نیز برای جا‌به‌جایی در شهر کمک بگیرید. با
-                اپلیکیشن‌های تاکسی‌های آنلاین در شهر رفت و آمد کنید. با دانلود
-                برنامه‌های نمایش خلافی خودرو و خدمات تعمیر خودرو، با خیال راحت
-                بحران‌ها را مدیریت کنید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>کتاب‌ها و مطبوعات اندرویدی</strong>
-              </h2>
-              <p class="mb-4">
-                اگر اهل کتاب‌ هستید، این دسته کتابخانه‌ای صوتی و آنلاین برای شما
-                است. اپلیکیشن‌های پادکست‌، نشریات انگلیسی زبان وآخرین اخبار روز
-                در این دسته جمع شده‌اند. برنامه‌های کتابگردی، پادکست‌ها، خرید
-                آنلاین کتاب، اخبار رسمی روز، داستان‌ها و قصه‌ها برای کودکان و
-                نشریات انگلیسی زبان، همگی را می‌توانید از بازار دانلود کنید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>برنامه‌های پزشکی و سلامت و تناسب اندام</strong>
-              </h2>
-              <p class="mb-4">
-                سلامتی و پزشکی هم در گوشی هوشمند جا دارد. برنامه‌های مراقبت از
-                سلامتی و اطلاعات پزشکی و گرفتن نوبت دکتر و کمک‌های اولیه یک پزشک
-                همراه است. سلامت، برنامه‌ریزی هم می‌خواهد. با اپلیکیشن‌های
-                دسته‌ی تناسب اندام به راحتی برای سلامتی و بدن خود برنامه بریزید.
-                با دانلود برنامه‌های تغذیه و رژیم برای خود هدف گذاری کنید.
-                راحت‌تر بخوابید، با برنامه پیاده‌روی کنید و تمرین‌های روزانه و
-                بدن‌سازی و ورزش خود را با کارهای روزانه‌ای مانند خرید هفتگی و
-                روزانه تنظیم کنید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>برنامه‌های خرید اینترنتی</strong>
-              </h2>
-              <p class="mb-4">
-                برای خرید هم می‌توانید سراغ بازار بیایید و آنلاین مواد غذایی،
-                گوشی، خانه و اتومبیل بخرید. آخرین و بهترین قیمت‌ها را رصد کنید و
-                از بین هزاران کالای موجود در سراسر ایران انتخاب کنید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>برنامه‌های آب‌ و هوا</strong>
-              </h2>
-              <p class="mb-4">
-                برنامه‌های آب و هوا شما را در جریانی تغییرات لحظه‌ای و اخبار روز
-                هواشناسی قرار می‌دهد. در عین حال می‌توانید کیفیت هوای محل زندگی
-                خود را مداوم رصد کنید، تغییرات زمین و آمادگی پس از حوادثی مانند
-                زلزله و سیل نیز نیاز به آموزش دارد که تمامی این اطلاعات در
-                برنامه‌های این دسته در دسترس است.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>برنامه‌های آشپزی Android</strong>
-              </h2>
-              <p class="mb-4">
-                آب و هوای دنیای آشپزی با دانلود اپلیکیشن‌های این دسته مزده‌دارتر
-                می‌شود. برنامه‌های آشپزی بازار برای هرسلیقه‌‌ای با هر میزان
-                دسترسی به مواد غذایی دستور غذایی دارد. آنلاین با گوشی اندروید
-                هوشمند خود مواد غذایی و میوه بخرید. با دستورهای جدید، پخت و پز
-                کنید. با برنامه‌های آشپزی و رستوران، رستوران‌های جدید را
-                بشناسید، غذا سفارش دهید و رستوران‌گردی کنید.
-              </p>
-              <h2 class="mb-2 text-lg">
-                <strong>اپلیکیشن‌های سبک زندگی</strong>
-              </h2>
-              <p class="mb-4">
-                هر فردی در طول روز برای بهتر و راحت‌تر زندگی کردن به برنامه‌های
-                دسته‌ی سبک زندگی نیاز دارد. در دسته‌ی سبک زندگی می‌توانید
-                برنامه‌های اندروید سلامت روان و خوشناسی را دانلود کنید؛ یا سری
-                به برنامه‌های کاربردی بزنید و هر سرویس آنلاینی که در طول روز به
-                آن نیاز دارید از خشکشویی تا تعمیرات خانه و طراحی داخلی را پیدا
-                کنید.
-              </p>
-            </div>
-            <div
-              id="collaps-btn"
-              class="bg-[linear-gradient(180deg,#f9fafd00_70%,_#ffffffb3_90%)] absolute bottom-0 mx-auto cursor-pointer pb-2 w-full h-full flex flex-col items-center justify-end"
-            >
-              <svg
-                class="-rotate-90"
-                width="20px"
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14 7L9 12L14 17"
-                  stroke="#000000"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
             </div>
           </div>
         </div>
@@ -689,7 +410,7 @@
 </main>
 
 <!-- Footer -->
-<footer class="bg-white pt-12 lg:pt-16">
+<footer id="footer" class="bg-white pt-12 lg:pt-16">
       <!-- Start Desktop Footer-->
       <div class="footer hidden lg:block">
         <div class="container sm:px-4">
@@ -854,6 +575,8 @@
       <!-- End Desktop Footer-->
 
       <!-- Start Botoom Menu-->
+
+      <!-- Start Botoom Menu-->
       <div
         id="bottom-menu"
         class="bg-white shadow-[0_2px_12px_rgba(0,0,0,0.1)] fixed bottom-0 w-full left-0 right-0 z-50 lg:hidden"
@@ -868,7 +591,7 @@
                 class="flex flex-col items-center justify-center"
               >
                 <svg
-                  fill="#717485"
+                  fill="#2a2a2a"
                   width="22px"
                   height="22px"
                   viewBox="0 0 32 32"
@@ -880,26 +603,26 @@
                   ></path>
                 </svg>
 
-                <span class="text-[#717485] mt-1 hover:text-secondary relative"
+                <span class="text-secondary mt-1 hover:text-secondary relative"
                   >خانه
-                  <div class=""></div>
+                  <div class="bottom-menu__item--active"></div>
                 </span>
               </a>
             </div>
             <div class="w-1/3">
               <a
-                href="./allApps.html"
+                href="././allApps.html"
                 class="flex flex-col items-center justify-center"
               >
                 <svg class="" width="24" height="24" fill="none">
                   <path
                     d="M5.482 2A3.477 3.477 0 002 5.472v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473V5.472A3.477 3.477 0 007.663 2H5.482zM16.336 2a3.477 3.477 0 00-3.481 3.472v2.176a3.477 3.477 0 003.481 3.473h2.182A3.477 3.477 0 0022 7.648V5.472A3.477 3.477 0 0018.518 2h-2.182zM5.482 12.825A3.477 3.477 0 002 16.297v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473v-2.176a3.477 3.477 0 00-3.482-3.472H5.482zM16.336 12.88a3.477 3.477 0 00-3.481 3.472v2.176A3.477 3.477 0 0016.335 22h2.182A3.477 3.477 0 0022 18.528v-2.176a3.477 3.477 0 00-3.482-3.473h-2.182z"
-                    fill="#20222A"
+                    fill="#717485"
                   ></path>
                 </svg>
                 <span class="relative"
                   >برنامه
-                  <div class="bottom-menu__item--active"></div>
+                  <div class=""></div>
                 </span>
               </a>
             </div>
@@ -924,9 +647,11 @@
           </div>
         </div>
       </div>
+
       <!-- End Botoom Menu-->
 </footer>
 
-  <script type="module" src="./src/script/applicationDetails.js"></script>
+<script defer src="./src/script/categoriesAppPage.js" type="module"></script>
+    
   </body>
 </html>

@@ -1,5 +1,5 @@
 //Select Dom Element
-const allAppsContainer = document.querySelector("#categoriesApp");
+const allCategoriesApp = document.querySelector("#CategoriesDetails");
 import { allAppData } from "../data/allData.js";
 
 //Get Params Search Bar Browser
@@ -25,9 +25,9 @@ console.log("removeRepeatApplications => ", removeRepeatApplications);
 
 // All Apps Generate In Append To Dom
 function appsCategoriesGenerator() {
-  allAppsContainer.innerHTML = "";
+  allCategoriesApp.innerHTML = "";
   removeRepeatApplications.map((app) => {
-    allAppsContainer.insertAdjacentHTML(
+    allCategoriesApp.insertAdjacentHTML(
       "beforeend",
       `
             <a href="appDetails.html?id=${app.id}" title="${app.title}" class="flex sm:flex-col rounded-lg px-2 py-2 transition-shadow duration-150 hover:shadow-mainShadow">
