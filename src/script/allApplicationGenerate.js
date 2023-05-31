@@ -1,7 +1,7 @@
 //Select Dom Element
 const allAppsContainer = document.querySelector("#allApps");
 const paginationContainer = document.querySelector("#pagination");
-import {allAppData} from "./allData.js";
+import {allAppData} from "../data/allData.js";
 let currentPage = 1;
 let paginatedApps = [];
 let pageSize = 24;

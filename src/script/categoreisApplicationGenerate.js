@@ -1,24 +1,32 @@
 //Select Dom Element
 const allAppsContainer = document.querySelector("#categoriesApp");
-import { allAppData } from "./allData.js";
+import { allAppData } from "../data/allData.js";
 
 //Get Params Search Bar Browser
 const locationParams = new URLSearchParams(location.search);
-let mainApplicationsTitle = locationParams.get("title")
+let mainApplicationsTitle = locationParams.get("title");
 
-const applicationsCategoriesArray = allAppData.filter(app => {
-  return app.type === mainApplicationsTitle
-})
+const applicationsCategoriesArray = allAppData.filter((app) => {
+  return app.type === mainApplicationsTitle;
+});
 
-console.log([...new Set(applicationsCategoriesArray)])
+const removeRepeatApplications = applicationsCategoriesArray.reduce((prev, current) => {
+    const mainApplication = prev.find((item) => item.title === current.title);
+
+    if (!mainApplication) {
+      return prev.concat([current]);
+    } else {
+      return prev;
+    }
+  
+},[]);
+
+console.log("removeRepeatApplications => ", removeRepeatApplications);
 
 // All Apps Generate In Append To Dom
 function appsCategoriesGenerator() {
-  // if()
   allAppsContainer.innerHTML = "";
-  applicationsCategoriesArray.map((app) => {
-
-
+  removeRepeatApplications.map((app) => {
     allAppsContainer.insertAdjacentHTML(
       "beforeend",
       `
@@ -34,6 +42,5 @@ function appsCategoriesGenerator() {
             </a>`
     );
   });
-  
 }
 appsCategoriesGenerator();

@@ -1,4 +1,4 @@
-import { allAppData, categoriesItemData } from "./allData.js";
+import { allAppData, categoriesItemData } from "../data/allData.js";
 // select Element To Dom
 const appPracticalContainer = document.querySelector("#app-practical"),
   appBankContainer = document.querySelector("#app-bank"),

@@ -1852,7 +1852,7 @@ const categoriesItemData = [
   },
   {
     id: 2,
-    title: "سرگرمی",
+    title: "آموزش",
     icon: 
       `<svg
         width="18.000000pt"
