@@ -1,1157 +1,1945 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon"  href="./src/images/favicon.ico"><!-- Icon Website-->
-    <link rel="stylesheet" href="./src/styles/swiper-bundle.min.css"><!-- Styles Swiper Js -->
-    <link rel="stylesheet" href="./src/styles/style-min.css"><!-- Tailwind Styles Minify -->
-    <link rel="stylesheet" href="./src/styles/app.css"> <!-- Custom Styles -->
-    <title>کافه بازار </title>
-</head>
-<body class="font-YekanBakh bg-white sm:bg-[#F9FAFD] text-[#2a2a2a] relative">
-
-
-<!--- Header --->
-<header class="bg-white lg:shadow-[0_2px_12px_rgba(0,0,0,0.1)] py-1 fixed top-0 left-0 w-full z-50 border-b border-solid border-[#0000001a]">
-    <div class="container px-4"> 
-
-      <!-- Start Desktop Nav -->
-      <div class="desktop-nav hidden lg:block">
-        <nav class="nav flex justify-between">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.ico" />
+    <!-- Icon Website-->
+    <link rel="stylesheet" href="./src/styles/swiper-bundle.min.css" />
+    <!-- Styles Swiper Js -->
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <!-- Tailwind Styles Minify -->
+    <link rel="stylesheet" href="./src/styles/app.css" />
+    <!-- Custom Styles -->
+    <title>کافه بازار</title>
+  </head>
+  <body class="font-YekanBakh bg-white sm:bg-[#F9FAFD] text-secondary relative">
+    <!--- Header --->
+    <header
+      class="bg-white lg:shadow-[0_2px_12px_rgba(0,0,0,0.1)] py-1 fixed top-0 left-0 w-full z-50 border-b border-solid border-[#0000001a]"
+    >
+      <div class="container px-4">
+        <!-- Start Desktop Nav -->
+        <div class="desktop-nav hidden lg:block">
+          <nav class="nav flex justify-between">
             <ul class="flex items-center">
-                <a class="ml-10 transition-all duration-150 hover:opacity-80" href="#" title="Home">
-                    <svg class="w-24 h-16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 636.36 306.97" xml:space="preserve">
-                      <defs/>
-                      <path d="M169.1 199.36a15.37 15.37 0 01-15.37-15.37v-76.86a15.37 15.37 0 1130.74 0v76.86c0 8.48-6.88 15.37-15.37 15.37zM115.3 214.73H76.86a15.37 15.37 0 110-30.74h30.75v-46.12a15.37 15.37 0 1130.74 0v53.81a23.07 23.07 0 01-23.05 23.05z"/>
-                      <path d="M207.46 245.48H169.1a15.37 15.37 0 110-30.74h30.75v-46.12a15.37 15.37 0 1130.74 0v53.73a23.15 23.15 0 01-23.13 23.13zM307.46 214.73h-38.23a23.28 23.28 0 01-23.26-23.26v-68.98a15.37 15.37 0 1130.74 0v61.49h30.75a15.37 15.37 0 110 30.75z"/>
-                      <circle cx="215.22" cy="122.49" r="15.37" class="st0"/>
-                      <circle cx="261.34" cy="245.48" r="15.37" class="st0"/>
-                      <g>
-                        <defs>
-                          <path id="SVGID_1_" d="M573.19 105.87l-.02-.02c-3.4-2.44-10.01-5.77-22.7-8.76-3.8-.9-8.14-1.76-13.11-2.56a301.76 301.76 0 00-21.88-2.65l-1.17-.1c-1.7-4.01-3.45-8.11-5.32-12.43-.99-2.31-1.94-4.64-2.93-7.1l-.36-.89c-3.67-9.07-7.53-18.38-14.22-26.65-7.42-9.18-17.16-14.23-27.41-14.23s-19.99 5.05-27.41 14.23c-6.68 8.26-10.55 17.57-14.22 26.63l-.37.91c-1 2.47-1.94 4.8-2.93 7.1-1.86 4.32-3.62 8.42-5.32 12.43l-1.17.1c-8.4.74-15.65 1.65-21.92 2.66-4.95.79-9.28 1.66-13.07 2.55-12.69 2.99-19.29 6.32-22.7 8.76l-.06.04a4.1 4.1 0 00-1.65 3.87l1.1 8.18c1.67 12.25 3.45 26.63 6.39 41.45 2.22 11.2 5.09 22.64 9.07 33.61 1.56 4.31 3.3 8.55 5.23 12.67a99.5 99.5 0 0066.23 52.56 99.3 99.3 0 0022.77 2.62c7.8 0 15.39-.9 22.66-2.6a99.51 99.51 0 0067-53.95c1.5-3.29 2.87-6.65 4.14-10.06 9.03-24.3 12.51-51.1 15.38-72.39l1.6-12.14a4.02 4.02 0 00-1.63-3.84zM464.07 89.9c-10.31 0-19.68.19-28.19.53l1.4-3.26c1.08-2.51 2.11-5.06 3.11-7.52 2.31-5.7 4.52-11.19 7.3-16.09a48.12 48.12 0 014.32-6.43c2.08-2.58 6.42-6.9 12.05-6.9 5.63 0 9.97 4.32 12.05 6.9a46.88 46.88 0 014.32 6.43c2.78 4.89 5 10.38 7.3 16.08.99 2.46 2.03 5.01 3.11 7.52l1.4 3.26c-8.49-.33-17.86-.52-28.17-.52z"/>
-                        </defs>
-                        <clipPath id="SVGID_2_">
-                          <use overflow="visible" xlink:href="#SVGID_1_"/>
-                        </clipPath>
-                        <g clip-path="url(#SVGID_2_)">
-                          <defs>
-                            <path id="SVGID_3_" d="M348.24 25.47h231.64v240.37H348.24z"/>
-                          </defs>
-                          <clipPath id="SVGID_4_">
-                            <use overflow="visible" xlink:href="#SVGID_3_"/>
-                          </clipPath>
-                          <g clip-path="url(#SVGID_4_)">
-                            <image width="484" height="502" overflow="visible" transform="matrix(.48 0 0 .48 347.82 25.01)" xlink:href="data:image/jpeg;base64,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"/>
-                          </g>
-                        </g>
+              <a
+                class="ml-10 transition-all duration-150 hover:opacity-80"
+                href="#"
+                title="Home"
+              >
+                <svg
+                  class="w-24 h-16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  id="Layer_1"
+                  x="0"
+                  y="0"
+                  version="1.1"
+                  viewBox="0 0 636.36 306.97"
+                  xml:space="preserve"
+                >
+                  <defs />
+                  <path
+                    d="M169.1 199.36a15.37 15.37 0 01-15.37-15.37v-76.86a15.37 15.37 0 1130.74 0v76.86c0 8.48-6.88 15.37-15.37 15.37zM115.3 214.73H76.86a15.37 15.37 0 110-30.74h30.75v-46.12a15.37 15.37 0 1130.74 0v53.81a23.07 23.07 0 01-23.05 23.05z"
+                  />
+                  <path
+                    d="M207.46 245.48H169.1a15.37 15.37 0 110-30.74h30.75v-46.12a15.37 15.37 0 1130.74 0v53.73a23.15 23.15 0 01-23.13 23.13zM307.46 214.73h-38.23a23.28 23.28 0 01-23.26-23.26v-68.98a15.37 15.37 0 1130.74 0v61.49h30.75a15.37 15.37 0 110 30.75z"
+                  />
+                  <circle cx="215.22" cy="122.49" r="15.37" class="st0" />
+                  <circle cx="261.34" cy="245.48" r="15.37" class="st0" />
+                  <g>
+                    <defs>
+                      <path
+                        id="SVGID_1_"
+                        d="M573.19 105.87l-.02-.02c-3.4-2.44-10.01-5.77-22.7-8.76-3.8-.9-8.14-1.76-13.11-2.56a301.76 301.76 0 00-21.88-2.65l-1.17-.1c-1.7-4.01-3.45-8.11-5.32-12.43-.99-2.31-1.94-4.64-2.93-7.1l-.36-.89c-3.67-9.07-7.53-18.38-14.22-26.65-7.42-9.18-17.16-14.23-27.41-14.23s-19.99 5.05-27.41 14.23c-6.68 8.26-10.55 17.57-14.22 26.63l-.37.91c-1 2.47-1.94 4.8-2.93 7.1-1.86 4.32-3.62 8.42-5.32 12.43l-1.17.1c-8.4.74-15.65 1.65-21.92 2.66-4.95.79-9.28 1.66-13.07 2.55-12.69 2.99-19.29 6.32-22.7 8.76l-.06.04a4.1 4.1 0 00-1.65 3.87l1.1 8.18c1.67 12.25 3.45 26.63 6.39 41.45 2.22 11.2 5.09 22.64 9.07 33.61 1.56 4.31 3.3 8.55 5.23 12.67a99.5 99.5 0 0066.23 52.56 99.3 99.3 0 0022.77 2.62c7.8 0 15.39-.9 22.66-2.6a99.51 99.51 0 0067-53.95c1.5-3.29 2.87-6.65 4.14-10.06 9.03-24.3 12.51-51.1 15.38-72.39l1.6-12.14a4.02 4.02 0 00-1.63-3.84zM464.07 89.9c-10.31 0-19.68.19-28.19.53l1.4-3.26c1.08-2.51 2.11-5.06 3.11-7.52 2.31-5.7 4.52-11.19 7.3-16.09a48.12 48.12 0 014.32-6.43c2.08-2.58 6.42-6.9 12.05-6.9 5.63 0 9.97 4.32 12.05 6.9a46.88 46.88 0 014.32 6.43c2.78 4.89 5 10.38 7.3 16.08.99 2.46 2.03 5.01 3.11 7.52l1.4 3.26c-8.49-.33-17.86-.52-28.17-.52z"
+                      />
+                    </defs>
+                    <clipPath id="SVGID_2_">
+                      <use overflow="visible" xlink:href="#SVGID_1_" />
+                    </clipPath>
+                    <g clip-path="url(#SVGID_2_)">
+                      <defs>
+                        <path
+                          id="SVGID_3_"
+                          d="M348.24 25.47h231.64v240.37H348.24z"
+                        />
+                      </defs>
+                      <clipPath id="SVGID_4_">
+                        <use overflow="visible" xlink:href="#SVGID_3_" />
+                      </clipPath>
+                      <g clip-path="url(#SVGID_4_)">
+                        <image
+                          width="484"
+                          height="502"
+                          overflow="visible"
+                          transform="matrix(.48 0 0 .48 347.82 25.01)"
+                          xlink:href="data:image/jpeg;base64,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"
+                        />
                       </g>
-                    </svg>
-                </a>
-                <li class="ml-7 relative">
-                  <a class="text-[#2A2A2E] " href="#">برنامه</a>
-                    <div class="w-9	h-1 bg-[#0ea960] rounded-lg rounded-br-none rounded-bl-none mt-[20px] absolute"></div>
-                </li>
-                <li class="ml-7"><a class="text-[#6b6b6b] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">بازی</a>
-                <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
-                </li>
-                <li class="ml-7"><a class="text-[#6b6b6b] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">پشتیانی</a>
-                <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
-                </li>
-                <li class="ml-7 hidden 2xl:block"><a class="text-[#6b6b6b] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">توسعه دهندگان بازار</a>
-                  <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
-                </li>
-                <li class="ml-7 hidden 2xl:block"><a class="text-[#6b6b6b] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">تبلیغات در بازار</a>
-                  <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
-                </li>
-                <li class="ml-7 hidden 2xl:block"><a class="text-[#6b6b6b] transition-colors duration-150 hover:text-[#2A2A2E]" href="#">فرصت های شغلی</a>
-                  <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
-                  </li>
-                <li class="2xl:hidden"><a class="text-[#6b6b6b] ml-5 transition-colors duration-150 hover:text-[#2A2A2E]" href="#" id="other-dropDown">سایر</a>
-                  <div id="other-menu" class="bg-white p-3 rounded-lg shadow-[0_4px_24px_rgba(0,0,0,0.1)] z-40 absolute mt-7 transition-all duration-150 opacity-0">
-                    <ul class="drop-down flex flex-col">
-                      <li class="drop-down__item group flex justify-between px-2 py-3 w-44 rounded-lg hover:bg-[#f1f2f9]">
-                        <a class="hover:text[#2a2a2a]" href="#">توسعه دهندگان بازار</a>
-                        <svg class="hidden group-hover:block" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M14 7L9 12L14 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                      </li>
-                      <li class="drop-down__item group flex justify-between px-2 py-3 w-44 rounded-lg hover:bg-[#f1f2f9]">
-                        <a class="hover:text[#2a2a2a]" href="#">تبلیغات در بازار</a>
-                        <svg class="hidden group-hover:block" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M14 7L9 12L14 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                      </li>
-                      <li class="drop-down__item group flex justify-between px-2 py-3 w-44 rounded-lg hover:bg-[#f1f2f9]">
-                        <a class="hover:text[#2a2a2a]" href="#">فرصت های شغلی </a>
-                        <svg class="hidden group-hover:block" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M14 7L9 12L14 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                          </svg>
-                      </li>
-                    </ul>
-                  </div>
-                <div class="hidden border-2 border-[#0ea960] rounded-xl translate-y-[18px]"></div>
-                </li>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <li class="ml-7 relative">
+                <a
+                  class="text-[#2A2A2E] desktop-nav-list__link active--link"
+                  href="#editors-app"
+                  >برنامه</a
+                >
+              </li>
+              <li class="ml-7">
+                <a
+                  class="desktop-nav-list__link text-neutral transition-colors duration-150 hover:text-[#2A2A2E]"
+                  href="#Musician"
+                  >بازی</a
+                >
+              </li>
+              <li class="ml-7">
+                <a
+                  class="desktop-nav-list__link text-neutral transition-colors duration-150 hover:text-[#2A2A2E]"
+                  href="#footer"
+                  >پشتیانی</a
+                >
+              </li>
+              <li class="ml-7 hidden 2xl:block">
+                <a
+                  class="desktop-nav-list__link text-neutral transition-colors duration-150 hover:text-[#2A2A2E]"
+                  href="#"
+                  >توسعه دهندگان بازار</a
+                >
+              </li>
+              <li class="ml-7 hidden 2xl:block">
+                <a
+                  class="desktop-nav-list__link text-neutral transition-colors duration-150 hover:text-[#2A2A2E]"
+                  href="#"
+                  >تبلیغات در بازار</a
+                >
+              </li>
+              <li class="ml-7 hidden 2xl:block">
+                <a
+                  class="desktop-nav-list__link text-neutral transition-colors duration-150 hover:text-[#2A2A2E]"
+                  href="#"
+                  >فرصت های شغلی</a
+                >
+              </li>
+              <li class="2xl:hidden">
+                <a
+                  class="desktop-nav-list__link text-neutral ml-5 transition-colors duration-150 hover:text-[#2A2A2E]"
+                  href="#"
+                  id="other-dropDown"
+                  >سایر</a
+                >
+                <div
+                  id="other-menu"
+                  class="bg-white p-3 rounded-lg shadow-mainShadow z-40 absolute mt-7 transition-all duration-150 opacity-0"
+                >
+                  <ul class="drop-down flex flex-col">
+                    <li
+                      class="drop-down__item group flex justify-between px-2 py-3 w-44 rounded-lg hover:bg-[#f1f2f9]"
+                    >
+                      <a class="hover:textsecondary" href="#"
+                        >توسعه دهندگان بازار</a
+                      >
+                      <svg
+                        class="hidden group-hover:block"
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14 7L9 12L14 17"
+                          stroke="#000000"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </li>
+                    <li
+                      class="drop-down__item group flex justify-between px-2 py-3 w-44 rounded-lg hover:bg-[#f1f2f9]"
+                    >
+                      <a class="hover:textsecondary" href="#"
+                        >تبلیغات در بازار</a
+                      >
+                      <svg
+                        class="hidden group-hover:block"
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14 7L9 12L14 17"
+                          stroke="#000000"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </li>
+                    <li
+                      class="drop-down__item group flex justify-between px-2 py-3 w-44 rounded-lg hover:bg-[#f1f2f9]"
+                    >
+                      <a class="hover:textsecondary" href="#">فرصت های شغلی </a>
+                      <svg
+                        class="hidden group-hover:block"
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14 7L9 12L14 17"
+                          stroke="#000000"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="hidden border-2 border-primary rounded-xl translate-y-[18px]"
+                ></div>
+              </li>
             </ul>
             <div class="flex items-center relative">
-                <div class="flex items-center relative ml-5">
-                  <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-2"><path d="M13.877 13.367l-3.303-3.328a4.828 4.828 0 001.171-3.164A4.87 4.87 0 006.873 2 4.87 4.87 0 002 6.875a4.87 4.87 0 008.035 3.703l3.327 3.305c.07.07.164.117.257.117a.376.376 0 00.258-.117.332.332 0 000-.516zM6.873 11A4.13 4.13 0 012.75 6.875 4.13 4.13 0 016.873 2.75a4.13 4.13 0 014.123 4.125A4.13 4.13 0 016.873 11z" fill="#717485"></path></svg>
-                  <input class="focus:outline-none focus:bg-white bg-[#f9fafd] py-2 px-8 rounded-lg border border-[#f0f0f0] text-sm" type="text" placeholder="جستجو در بازار ">
-                </div>
-                <a class="ml-5 hover:bg-[#00000008] p-3 transition-all duration-150 rounded-full" title="ورود به بازار" href="#">
-                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
-                    <path d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z" fill="#9da0af"></path>
+              <div class="flex items-center relative ml-5">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="absolute right-2"
+                >
+                  <path
+                    d="M13.877 13.367l-3.303-3.328a4.828 4.828 0 001.171-3.164A4.87 4.87 0 006.873 2 4.87 4.87 0 002 6.875a4.87 4.87 0 008.035 3.703l3.327 3.305c.07.07.164.117.257.117a.376.376 0 00.258-.117.332.332 0 000-.516zM6.873 11A4.13 4.13 0 012.75 6.875 4.13 4.13 0 016.873 2.75a4.13 4.13 0 014.123 4.125A4.13 4.13 0 016.873 11z"
+                    fill="#717485"
+                  ></path>
                 </svg>
+                <input
+                  class="focus:outline-none focus:bg-white bg-[#f9fafd] py-2 px-8 rounded-lg border border-[#f0f0f0] text-sm"
+                  type="text"
+                  placeholder="جستجو در بازار "
+                />
+              </div>
+              <a
+                class="ml-5 hover:bg-[#00000008] p-3 transition-all duration-150 rounded-full"
+                title="ورود به بازار"
+                href="#"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class=""
+                >
+                  <path
+                    d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z"
+                    fill="#9da0af"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="bg-primary transition-all duration-150 hover:bg-[#0da05b] px-4 py-2 text-white rounded-md text-sm ml-4"
+                href="#"
+                title=""
+                >دانلود بازار</a
+              >
+
+              <button id="btn-language" class="p-2 hover:bg-[#f1f2f9]">
+                <svg
+                  id="theme-language"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class=""
+                >
+                  <path
+                    id="icon-language"
+                    d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    fill="#757575"
+                  ></path>
+                </svg>
+              </button>
+
+              <div
+                id="language-menu"
+                class="bg-white rounded-lg p-2 shadow-mainShadow z-40 absolute left-0 transition-all duration-150 w-48 mt-32 opacity-0"
+              >
+                <a
+                  href="#"
+                  class="py-3 block px-1 text-secondary text-left hover:bg-[#f1f2f9] rounded-lg pl-2"
+                >
+                  English version
                 </a>
-                <a class="bg-[#0ea960] transition-all duration-150 hover:bg-[#0da05b] px-4 py-2 text-white rounded-md text-sm ml-4" href="#"  title="">دانلود بازار</a>
-                
-                <button id="btn-language" class="p-2 hover:bg-[#f1f2f9]">
-                    <svg id="theme-language"  width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
-                        <path id="icon-language" d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#757575"></path>
-                    </svg>
-                  </button>
-
-                  <div id="language-menu" class="bg-white rounded-lg p-2 shadow-[0_4px_24px_rgba(0,0,0,0.1)] z-40 absolute left-0 transition-all duration-150 w-48 mt-32 opacity-0">
-                    <a href="#" class="py-3 block px-1 text-[#2a2a2a] text-left hover:bg-[#f1f2f9] rounded-lg pl-2"> English version </a>
-                  </div>
-
+              </div>
             </div>
-        </nav>
-      </div><!-- End Desktop Nav -->
-      
-      <!-- Start Mobile Nav -->
-      <div class="mobile-nav lg:hidden">
-        <div class="mobile-nav-top flex justify-between items-center mt-2">
-          
-          <div id="mobile-nav-input" class="relative flex items-center w-full">
-            <svg class="absolute right-2"  width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.877 13.367l-3.303-3.328a4.828 4.828 0 001.171-3.164A4.87 4.87 0 006.873 2 4.87 4.87 0 002 6.875a4.87 4.87 0 008.035 3.703l3.327 3.305c.07.07.164.117.257.117a.376.376 0 00.258-.117.332.332 0 000-.516zM6.873 11A4.13 4.13 0 012.75 6.875 4.13 4.13 0 016.873 2.75a4.13 4.13 0 014.123 4.125A4.13 4.13 0 016.873 11z" fill="#717485"></path>
-            </svg>
-            <input class="w-full focus:outline-none focus:bg-white bg-[#f9fafd] py-2 px-8 rounded-lg border border-[#f0f0f0 text-sm" type="text" placeholder="جستجو در بازرا">
-          </div>
-          <a class="mr-3 hover:bg-[#00000008] p-3 transition-all duration-150 rounded-full" title="ورود به بازار" href="#">
-            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
-                <path d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z" fill="#9da0af"></path>
-            </svg>
+          </nav>
+        </div>
+        <!-- End Desktop Nav -->
+
+        <!-- Start Mobile Nav -->
+        <div class="mobile-nav lg:hidden">
+          <div class="mobile-nav-top flex justify-between items-center mt-2">
+            <div
+              id="mobile-nav-input"
+              class="relative flex items-center w-full"
+            >
+              <svg
+                class="absolute right-2"
+                width="16"
+                height="16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.877 13.367l-3.303-3.328a4.828 4.828 0 001.171-3.164A4.87 4.87 0 006.873 2 4.87 4.87 0 002 6.875a4.87 4.87 0 008.035 3.703l3.327 3.305c.07.07.164.117.257.117a.376.376 0 00.258-.117.332.332 0 000-.516zM6.873 11A4.13 4.13 0 012.75 6.875 4.13 4.13 0 016.873 2.75a4.13 4.13 0 014.123 4.125A4.13 4.13 0 016.873 11z"
+                  fill="#717485"
+                ></path>
+              </svg>
+              <input
+                class="w-full focus:outline-none focus:bg-white bg-[#f9fafd] py-2 px-8 rounded-lg border border-[#f0f0f0 text-sm"
+                type="text"
+                placeholder="جستجو در بازرا"
+              />
+            </div>
+            <a
+              class="mr-3 hover:bg-[#00000008] p-3 transition-all duration-150 rounded-full"
+              title="ورود به بازار"
+              href="#"
+            >
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class=""
+              >
+                <path
+                  d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z"
+                  fill="#9da0af"
+                ></path>
+              </svg>
             </a>
-        </div>
-        <div class="mobile-nav-list  mb-2 mt-5 sm:w-3/4 sm:mx-auto">
-          <ul class="flex justify-between">
-            <li class="relative"><a href="#" class="text-[#0ea960] text-sm font-medium">برای شما</a>
-              <div class="w-9	h-1 bg-[#0ea960] rounded-lg rounded-br-none rounded-bl-none mt-[8px] absolute right-[6px]"></div>
-            </li>
-            <li class=""><a href="#" class="text-[#6b6b6b] text-sm font-medium">دسته بندی ها</a></li>
-            <li class=""><a href="#" class="text-[#6b6b6b] text-sm font-medium">کودک</a></li>
-          </ul>
-        </div>
-
-      </div><!-- End Mobile Nav -->
-
-     </div>
-</header>
-
-
-<!--- Main --->
-<main class="main">
-
-<!-- title App-->
-<section class="mt-28 sm:mt-24 hidden lg:block">
-    <div class="container sm:px-4">
-      <div class="bg-white border border-solid border-[#0000001a] rounded-lg ">
-        <h2 class="py-4 mr-5">برنامه ها</h2>
-      </div>
-    </div>
-</section>
-
-<!--- Section App Practical --->
-<section class="mt-32 sm:mt-[134px] lg:mt-5 mb-5 sm:mb-0 app-practical">
-    <div class="container sm:px-4">
-
-      <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-        <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-        <h2 class="py-2 sm:py-3 mr-4">برنامه های کاربردی</h2>
-        <a  href="#" class="flex items-center ml-4 text-sm group" title="برنامه های کاربردی">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
-      </div>
-      <div class="mr-0 sm:mr-3 my-4 relative">
-        <div class="swiper app-slider">
-          <div class="swiper-wrapper" id="app-practical">
-
-            <!-- Render Js Template practical App-->
-
           </div>
-          <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-          <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-           <!-- Scroll Bar -->
-           <div class="swiper-scrollbar"></div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!--- Section App Bank --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-bank">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">برنامه‌های رسمی بانک‌های کشور</h2>
-      <a href="#" class="flex items-center ml-4 text-sm  group" title="برنامه های بانکی کشور">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="app-bank">
-
-          <!-- Render Js Template Bank App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section App entertainment --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-entertainment">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">سرگرمی برای همه</h2>
-      <a href="#" class="flex items-center ml-4 text-sm group" title="سرگرمی برای همه">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="app-entertainment">
-
-          <!-- Render Js Template Entertainment App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section App Social --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-Social">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">روی خط شبکه‌های اجتماعی</h2>
-      <a href="#" class="flex items-center ml-4 text-sm group" title="روی خط شبکه‌های اجتماعی">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="app-social">
-
-          <!-- Render Js Template Social App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section App Musician --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-musician">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">نوازنده ساز محبوبت باش</h2>
-      <a href="#" class="flex items-center ml-4 text-sm group" title="نوازنده ساز محبوبت باش">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]"width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="app-musician">
-
-          <!-- Render Js Template Musician App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section App Online Payment --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-online-payment">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">بسته پرداخت آنلاین </h2>
-      <a href="#" class="flex items-center ml-4 text-sm group" title="بسته پرداخت آنلاین">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]"width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-3 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="app-online-payment">
-
-          <!-- Render Js Template Payment App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section App Antivirus --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-antivirus">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">به آنتی‌ویروس مجهز شو</h2>
-      <a href="#" class="flex items-center ml-4 text-sm group" title="به آنتی‌ویروس مجهز شو">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="app-antivirus">
-
-          <!-- Render Js Template Antivirus App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section Ads App --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 ads-apps">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">توی خونه خوش باش!</h2>
-    </div>
-    <div class="my-3 relative">
-      <div class="swiper ads-app">
-        <div class="swiper-wrapper" id="ads-app">
-          <a href="#" class="swiper-slide pr-0 sm:pr-2 transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/ads-app/ads-app-1.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/ads-app/ads-app-2.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/ads-app/ads-app-3.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/ads-app/ads-app-4.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide pl-2 transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/ads-app/ads-app-5.webp" loading="lazy" alt="تبلیغات">
-          </a>
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section App Editors --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-editors">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">برنامه‌های جدید منتخب سردبیران </h2>
-      <a href="#" class="flex items-center ml-4 text-sm group" title="برنامه‌های جدید منتخب سردبیران ">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="app-editors">
-
-          <!-- Render Js Template Editors App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section Update Editors --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 update-editors">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">بروزرسانی‌های منتخب سردبیران</h2>
-      <a href="#" class="flex items-center ml-4 text-sm group" title="بروزرسانی‌های منتخب سردبیران">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="update-editors">
-
-          <!-- Render Js Template Update Editors -->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section App English --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-english">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">زبان ارتباط رو انگلیسی کن</h2>
-      <a href="#" class="flex items-center ml-4 text-sm group" title="زبان ارتباط رو انگلیسی کن">
-        <span class="group-hover:text-[#0ea960]">بیشتر</span>
-        <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="app-english">
-
-          <!-- Render Js Template English App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section Showcase App --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 Showcase-apps">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-      <h2 class="py-2 sm:py-3 mr-4">ویترین برنامه‌ها</h2>
-    </div>
-    <div class="my-4 relative">
-      <div class="swiper ads-app">
-        <div class="swiper-wrapper" id="ads-app">
-          <a href="#" class="swiper-slide pr-0 sm:pr-2 transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-1.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-2.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-3.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-4.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-5.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-6.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-7.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-8.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-9.webp" loading="lazy" alt="تبلیغات">
-          </a>
-          <a href="#" class="swiper-slide pl-2 transition-transform duration-150 hover:saturate-150 hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">
-            <img class="rounded-lg w-full h-full object-cover" src="./src/images/showcase-app/showcase-app-10.webp" loading="lazy" alt="تبلیغات">
-          </a>
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section Photo Editing Apps --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 photo-editing-apps">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-        <h2 class="py-2 sm:py-3 mr-4">ابزارهای ویرایش عکس</h2>
-        <a href="#" class="flex items-center ml-4 text-sm group" title="ابزارهای ویرایش عکس">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="editing-app">
-
-          <!-- Render Js Template Photo Editing App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section Low Volume --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 low-volum-apps">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-        <h2 class="py-2 sm:py-3 mr-4">برنامه‌های کم حجم</h2>
-        <a href="#" class="flex items-center ml-4 text-sm group" title="برنامه‌های کم حجم">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="low-volum-app">
-
-          <!-- Render Js Template Low Volume App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section Apps Mobile tools --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 mobile-tools-apps">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-        <h2 class="py-2 sm:py-3 mr-4">ابزارهای ضروری موبایل</h2>
-        <a href="#" class="flex items-center ml-4 text-sm  group" title="ابزارهای ضروری موبایل">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="mobile-tool-app">
-
-          <!-- Render Js Template  Mobile tools App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section Apps Hottest Others --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 hottest-others-apps">
-  <div class="container sm:px-4">
-
-    <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-        <h2 class="py-2 sm:py-3 mr-4">داغ‌ترین‌ها برای دیگران</h2>
-        <a href="#" class="flex items-center ml-4 text-sm group " title="داغ‌ترین‌ها برای دیگران">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="hottest-others-app">
-
-          <!-- Render Js Template Hottest Others  App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section Apps Best Seller --->
-<section class="mt-6 sm:mt-5 mb-5 sm:mb-0 best-seller-apps">
-  <div class="container sm:px-4">
-
-  <div class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-        <h2 class="py-2 sm:py-3 mr-4 ">برنامه‌های پرفروش</h2>
-        <a href="#" class="flex items-center ml-4 text-sm group" title="برنامه‌های پرفروش">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
-            <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
-    </div>
-    <div class="mr-0 sm:mr-3 my-4 relative">
-      <div class="swiper app-slider">
-        <div class="swiper-wrapper" id="best-seller-app">
-
-          <!-- Render Js Template Best Seller App-->
-
-        </div>
-        <div class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl  left-0 swiper-arrow bg-white  px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-        <div class="swiper-button-prev swiper-arrow after:text-xl after:font-bold  lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-[#6b6b6b] rounded-lg"></div>
-         <!-- Scroll Bar -->
-         <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-<!--- Section categories Program --->
-<section class="categories-apps mt-6 sm:mt-5">
-  <div class="container sm:px-4">
-    <div class="bg-white pb-4 sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg">
-      <div class="flex items-center justify-between sm:border-b sm:border-[#0000001a]">
-        <h2 class="py-2 sm:py-3 mr-5 font-medium">دسته‌بندی‌های برنامه</h2>
-        <a href="#" class="flex items-center ml-4 text-sm group" title="دسته‌بندی‌های برنامه">
-          <span class="group-hover:text-[#0ea960]">بیشتر</span>
-          <svg class="stroke-[#2a2a2a] group-hover:stroke-[#0ea960]" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 7L9 12L14 17" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
-      </div>
-      <div class="categories-items pt-4 mx-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4">
-        <a href="#" title="سرگرمی" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">  
-          <div class="categories-icon flex items-center mr-3">
-            <svg width="18.000000pt" height="18.000000pt" viewBox="0 0 18.000000 18.000000" preserveAspectRatio="xMidYMid meet"> 
-            <g transform="translate(0.000000,18.000000) scale(0.100000,-0.100000)"
-            fill="#2a2a2a" stroke="none">
-            <path d="M14 156 c-3 -7 -4 -42 -2 -77 l3 -64 75 0 75 0 3 34 c4 39 -10 60
-            -30 43 -18 -14 -52 10 -37 25 7 7 7 17 -3 32 -15 24 -75 30 -84 7z m73 -16
-            c15 -23 5 -32 -39 -35 -23 -2 -28 1 -28 19 0 13 3 26 7 29 13 14 49 6 60 -13z
-            m-11 -86 c0 -32 -2 -35 -25 -32 -32 4 -42 45 -16 64 26 19 41 7 41 -32z m82
-            -3 c-4 -32 -45 -42 -64 -16 -19 26 -7 41 32 41 32 0 35 -2 32 -25z"/>
-            </g>
-            </svg>
-            <span class="mr-1">سرگرمی</span>
+          <div class="mobile-nav-list mb-2 mt-5 sm:w-3/4 sm:mx-auto">
+            <ul class="flex justify-between">
+              <li class="relative">
+                <a
+                  href="./index.html"
+                  class="mobile-nav-list__link active--link text-sm font-medium"
+                  >برای شما</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="./categoriesAppPage.html"
+                  class="mobile-nav-list__link text-neutral text-sm font-medium"
+                  >دسته بندی ها</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="#Musician"
+                  class="mobile-nav-list__link text-neutral text-sm font-medium"
+                  >کودک</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="flex ml-4">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 7L9 12L14 17" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </div>
+        <!-- End Mobile Nav -->
+      </div>
+    </header>
+
+    <!--- Main --->
+    <main class="main">
+      <!-- title App-->
+      <section class="mt-28 sm:mt-24 hidden lg:block">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white border border-solid border-[#0000001a] rounded-lg"
+          >
+            <h2 class="py-4 mr-5">برنامه ها</h2>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section App Practical --->
+      <section class="mt-32 sm:mt-[134px] lg:mt-5 mb-5 sm:mb-0 app-practical">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">برنامه های کاربردی</h2>
+              <a
+                href="./allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="برنامه های کاربردی"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="app-practical">
+                  <!-- Render Js Template practical App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section App Bank --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-bank">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">برنامه‌های رسمی بانک‌های کشور</h2>
+              <a
+                href="./allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="برنامه های بانکی کشور"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="app-bank">
+                  <!-- Render Js Template Bank App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section App entertainment --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-entertainment">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">سرگرمی برای همه</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="سرگرمی برای همه"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="app-entertainment">
+                  <!-- Render Js Template Entertainment App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section App Social --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-Social">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">روی خط شبکه‌های اجتماعی</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="روی خط شبکه‌های اجتماعی"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="app-social">
+                  <!-- Render Js Template Social App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section App Musician --->
+      <section id="Musician" class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-musician">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">نوازنده ساز محبوبت باش</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="نوازنده ساز محبوبت باش"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="app-musician">
+                  <!-- Render Js Template Musician App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section App Online Payment --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-online-payment">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">بسته پرداخت آنلاین</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="بسته پرداخت آنلاین"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-3 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="app-online-payment">
+                  <!-- Render Js Template Payment App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section App Antivirus --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-antivirus">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">به آنتی‌ویروس مجهز شو</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="به آنتی‌ویروس مجهز شو"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="app-antivirus">
+                  <!-- Render Js Template Antivirus App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section Ads App --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 ads-apps">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">توی خونه خوش باش!</h2>
+            </div>
+            <div class="my-3 relative">
+              <div class="swiper ads-app">
+                <div class="swiper-wrapper" id="ads-app">
+                  <a
+                    href="#"
+                    class="swiper-slide pr-0 sm:pr-2 transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/ads-app/ads-app-1.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/ads-app/ads-app-2.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/ads-app/ads-app-3.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/ads-app/ads-app-4.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide pl-2 transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/ads-app/ads-app-5.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section App Editors --->
+      <section id="editors-app" class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-editors">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">برنامه‌های جدید منتخب سردبیران</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="برنامه‌های جدید منتخب سردبیران "
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="app-editors">
+                  <!-- Render Js Template Editors App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section Update Editors --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 update-editors">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">بروزرسانی‌های منتخب سردبیران</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="بروزرسانی‌های منتخب سردبیران"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="update-editors">
+                  <!-- Render Js Template Update Editors -->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section App English --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 app-english">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">زبان ارتباط رو انگلیسی کن</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="زبان ارتباط رو انگلیسی کن"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="app-english">
+                  <!-- Render Js Template English App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section Showcase App --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 Showcase-apps">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">ویترین برنامه‌ها</h2>
+            </div>
+            <div class="my-4 relative">
+              <div class="swiper ads-app">
+                <div class="swiper-wrapper" id="ads-app">
+                  <a
+                    href="#"
+                    class="swiper-slide pr-0 sm:pr-2 transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/showcase-app/showcase-app-1.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/showcase-app/showcase-app-2.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/showcase-app/showcase-app-3.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/showcase-app/showcase-app-4.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/showcase-app/showcase-app-5.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/showcase-app/showcase-app-6.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/showcase-app/showcase-app-7.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/showcase-app/showcase-app-8.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/showcase-app/showcase-app-9.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="swiper-slide pl-2 transition-transform duration-150 hover:saturate-150 hover:shadow-mainShadow"
+                  >
+                    <img
+                      class="rounded-lg w-full h-full object-cover"
+                      src="./src/images/showcase-app/showcase-app-10.webp"
+                      loading="lazy"
+                      alt="تبلیغات"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section Photo Editing Apps --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 photo-editing-apps">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">ابزارهای ویرایش عکس</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="ابزارهای ویرایش عکس"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="editing-app">
+                  <!-- Render Js Template Photo Editing App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section Low Volume --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 low-volum-apps">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">برنامه‌های کم حجم</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="برنامه‌های کم حجم"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="low-volum-app">
+                  <!-- Render Js Template Low Volume App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section Apps Mobile tools --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 mobile-tools-apps">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">ابزارهای ضروری موبایل</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="ابزارهای ضروری موبایل"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="mobile-tool-app">
+                  <!-- Render Js Template  Mobile tools App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section Apps Hottest Others --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 hottest-others-apps">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">داغ‌ترین‌ها برای دیگران</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="داغ‌ترین‌ها برای دیگران"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="hottest-others-app">
+                  <!-- Render Js Template Hottest Others  App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section Apps Best Seller --->
+      <section class="mt-6 sm:mt-5 mb-5 sm:mb-0 best-seller-apps">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-4">برنامه‌های پرفروش</h2>
+              <a
+                href="././allApps.html"
+                class="flex items-center ml-4 text-sm group"
+                title="برنامه‌های پرفروش"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="mr-0 sm:mr-3 my-4 relative">
+              <div class="swiper app-slider">
+                <div class="swiper-wrapper" id="best-seller-app">
+                  <!-- Render Js Template Best Seller App-->
+                </div>
+                <div
+                  class="swiper-button-next after:text-xl after:font-bold lg:after:text-2xl left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <div
+                  class="swiper-button-prev swiper-arrow after:text-xl after:font-bold lg:after:text-2xl lg:after:font-bold left-0 swiper-arrow bg-white px-5 py-3 text-neutral rounded-lg"
+                ></div>
+                <!-- Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section categories Program --->
+      <section class="categories-apps mt-6 sm:mt-5 hidden lg:block">
+        <div class="container sm:px-4">
+          <div
+            class="bg-white pb-4 sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg"
+          >
+            <div
+              class="flex items-center justify-between sm:border-b sm:border-[#0000001a]"
+            >
+              <h2 class="py-2 sm:py-3 mr-5 font-medium">
+                دسته‌بندی‌های برنامه
+              </h2>
+              <a
+                href="#"
+                class="flex items-center ml-4 text-sm group"
+                title="دسته‌بندی‌های برنامه"
+              >
+                <span class="group-hover:text-primary">بیشتر</span>
+                <svg
+                  class="stroke-secondary group-hover:stroke-primary"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 7L9 12L14 17"
+                    stroke=""
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div
+              id="allCategories"
+              class="categories-items pt-4 mx-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!--- Section Articles  --->
+      <section class="collaps mt-8 mb-5 sm:mt-5">
+        <div class="container px-4">
+          <div
+            id="collaps-acordion"
+            class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg sm:p-4 overflow-hidden relative"
+          >
+            <div
+              id="collaps-content"
+              class="collaps-expand overflow-hidden max-h-[230px] transition-all duration-150 mb-4"
+            >
+              <p class="mb-4">
+                به خودتان نگاهی بیندازید، آیا برای انجام هر کاری به گوشی خود سر
+                نمی‌زنید؟ آیا به‌دنبال
+                <strong>دانلود برنامه‌های اندرویدی</strong> نیستید که کارهایتان
+                را آسان‌تر کنند؟ ما در بازار
+                <strong>اپلیکیشن‌های اندروید</strong>، برای هر موضوعی که در ذهن
+                شماست، برنامه داریم و امکان نصب و دانلود آن‌ها را با اینترنت
+                نیم‌بها و با سپر امنیت بازار برایتان فراهم کرده‌ایم.
+              </p>
+              <p class="mb-6">
+                اپلیکیشن‌های بازار در ۲۰ دسته‌ی مختلف منظم شده‌اند که در ادامه
+                آن‌ها را برایتان معرفی می‌کنیم. کافی است موضوع مورد علاقه‌ی خود
+                را انتخاب کنید و از بین صدها برنامه هر دسته، بهترین و
+                کاربردی‌ترین اپ را دانلود کنید. فراموش نکنید که حتما به نظرات و
+                امتیازی (Rating) که کاربران به برنامه‌ها داده‌اند نیز توجه کنید
+                تا حافظه موبایل‌تان را با اپ‌های بهتری پر کنید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>دانلود برنامه‌های جدید اندرویدی</strong>
+              </h2>
+              <p class="mb-4">
+                در صفحه اصلی بازار می‌توانید برنامه‌های جدید منتخب سردبیران و
+                همینطور بروزرسانی‌های منتخب را ببینید و از هیچ برنامه جدیدی جا
+                نمانید. بازی‌های جدید نیز در صفحه بازی‌های اندرویدی بازار
+                به‌همین ترتیب مشخص هستند.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>برنامه‌های شبکه‌های اجتماعی</strong>
+              </h2>
+              <p class="mb-4">
+                امروز برای بسیاری از ما، گذران زندگی و کار بدون شبکه‌های اجتماعی
+                امکان‌پذیر مثل واتساپ، اینستاگرام، تلگرام، توییتر، یوتیوب و ...
+                نیست. هر برنامه‌ای که دوست دارید را انتخاب و ارتباط با جهان را
+                آغاز کنید. جدیدترین بروزرسانی این اپ‌های بسیار پرطرفدار نیز به
+                محض انتشار، در بازار قرار می‌گیرند و از طریق اطلاع‌رسانی‌ها
+                (نوتیفیکیشن) شما را مطلع می‌کنند.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>ابزارهای اندرویدی</strong>
+              </h2>
+              <p class="mb-4">
+                گوشی شما با برنامه‌های دسته‌ی ابزارهای بازار، آچار فرانسه‌ است.
+                از ماشین حساب، زنگ، یادآور و تقویم گرفته تا ابزارهای افزایش سرعت
+                گوشی، قفل برنامه‌ها، افزایش عمر باتری، ارزیابی سرعت و مصرف
+                اینترنت، تبدیل واحدها، بارکد ساز و بارکدخوان، قطب‌نما، چراغ قوه،
+                ساخت نسخه‌ی پشتیبان، دفتر یادداشت، آنتی ویروس‌ها، حافظه‌ی ابری و
+                بسیاری برنامه‌ی پرکاربرد دیگر.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>اپلیکیشن‌های عکاسی و ویدیو و فیلم‌برداری</strong>
+              </h2>
+              <p class="mb-4">
+                اگر دنبال برنامه‌هایی هستید که از گوشی خود بهتر و بیشتر استفاده
+                کنید، به دسته‌های شخصی‌سازی و عکاسی و ویدیو سر بزنید.
+                اپلیکیشن‌های تصاویر پس زمینه، قفل‌ها و برترین‌ برنامه‌های تغییر
+                فضای گوشی را از دسته‌ی شخصی‌سازی نصب کنید. برنامه‌های ویرایش و
+                ساخت عکس، ساخت ویدیو و چاپ عکس را نیز از دسته‌ي عکاسی و ویدیو
+                دانلود کنید و دنیای فیلترها و ابزارهای تدوین را تجربه کنید.
+              </p>
+              <p class="mb-4">
+                از ابزارهای شخصی‌سازی نیز غافل نشوید و گوشی خود را با آن‌ها، به
+                سبک خود تغییر دهید. مثلا زنگ گوشی، پس زمینه و صفحه کلید شخصی خود
+                را دانلود کنید و با قفل فایل‌ها و برنامه‌ها کنترل موبایل خود را
+                به دست بگیرید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>برنامه‌های امور مالی</strong>
+              </h2>
+              <p class="mb-4">
+                حوزه‌ی سرمایه و پول هر روز در حال تغییر و پیشرفت است. دسته‌ی
+                امور مالی برنامه‌های کاربردی‌ای مثل رمز پویا، روش‌های انتقال
+                پول، همراه بانک‌ها، حسابداری شخصی تا برنامه‌های تحلیلی بازار
+                بورس و سرمایه‌گذاری، فروش سهام عدالت، قوانین مالی و محاسبات
+                حقوقی، محاسبه سود سپرده و وام را پوشش می‌دهد. همینطور با کمک
+                برنامه‌های حسابداری شخصی، تحلیل بازار بورس و مالی می‌توانید
+                سرمایه‌ خود را مدیریت کنید و دخل و خرج‌تان را محاسبه کنید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>اپ‌های آموزشی</strong>
+              </h2>
+              <p class="mb-4">
+                آموزش مجازی این روزها حرف اول را می‌زند. اپلیکیشن‌هایی که
+                بتوانند سریع‌ترین و شیرین‌ترین روش یادگیری موضوعات مثل زبان
+                انگلیسی، آشپزی، درس‌های از دبستان تا کنکور، برنامه‌نویسی و
+                بسیاری موضوعات دیگر را در دسترس قرار دهند، بیشترین طرفدار را
+                دارند. این دسته، دنیایی از اپلیکیشن‌هاست که می‌توانید با دانلود
+                آن‌ها هر موضوعی را یاد بگیرید. معروف‌ترین و پرطرفدارترین برنامه
+                این دسته هم اپلیکیشن شاد مدارس است که دانش‌آموزان علاقه زیادی به
+                آن دارند.(!)
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>برنامه‌های موسیقی و صداگذاری</strong>
+              </h2>
+              <p class="mb-4">
+                برنامه‌های اندروید موسیقی، شما را به آخرین آلبوم‌ها و آهنگ‌های
+                روز متصل می‌کند. با کمک این اپ‌ها می‌توانید پلی‌لیست‌ شخصی‌های
+                خود را بسازید، روی ویدیوهای خود صدا بگذارید و اپلیکیشن‌های تغییر
+                صدای مختلف را ببینید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>بازار کودک</strong>
+              </h2>
+              <p class="mb-4">
+                بازی و یادگیری و برنامه، قصه، بازی‌های شاد و سرگرم کننده و
+                برترین اپلیکیشن‌های کودک در دسته‌ی کودک بازار، ویژه کودکان شما
+                است. امروز ارتباط کودکان با دنیای تکنولوژی غیرقابل انکار است. از
+                دسته‌ی کودک براحتی انتخاب کنید که دوست دارید کودک شما با کدام
+                برنامه‌‌ی اندرویدی، بازی کند و یاد بگیرد.
+              </p>
+              <p class="mb-4">
+                با فعال کردن «بازار کودک» از «بازار من» می‌توانید با خیال راحت
+                گوشی هوشمند خود را در اختیار کودکان قرار دهید و خیالتان راحت
+                باشد که محتواهای نامناسب برای فرزندتان نمایش داده نمی‌شود.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>اپ‌های سرگرمی</strong>
+              </h2>
+              <p class="mb-4">
+                داشتن گوشی هوشمند در عین حال که کاربردی است، سرگرم کننده هم هست.
+                برنامه‌های دسته‌ی سرگرمی طیف متفاوتی از اپلیکیشن‌هایی است که
+                می‌توانید بسته به حال و لحظه از بین آنها انتخاب کنید؛ اهل نقاشی
+                دیجیتال هستید؟ دوست دارید فیلم و سریال تماشا کنید؟ هر چیزی که
+                بخواهید را می‌توانید در این دسته‌بندی پیدا کنید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>برنامه‌های ورزشی</strong>
+              </h2>
+              <p class="mb-4">
+                با برنامه‌های اندرویدی بازار ببینید در دنیای ورزش چه می‌گذرد.
+                فوتبال، والیبال، لیگ برتر و جام حذفی، المپیک و حاشیه‌ی دنیای
+                ورزش، پخش زنده و هیاهوی بازی‌های فینال، برنامه‌های اخبار و پخش
+                زنده ورزشی، همه و همه در بازار موجود هستند.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>اپلیکیشن‌های مذهبی</strong>
+              </h2>
+              <p class="mb-4">
+                دسته‌ی مذهبی طیف گسترده‌ای ازبرنامه‌های کاربردی و تخصصی این حوزه
+                را در خود جای داده است. برنامه‌های پرکاربرد مذهبی مانند
+                تقویم‌های اذان‌گو و اوقات شرعی و برنامه‌های آموزش حفظ و تلاوت
+                قرآن، قرآن کتبی و صوتی، برنامه‌های ختم قرآن و حکایت‌های مذهبی را
+                در دسته‌ی مذهبی به راحتی پیدا و دانلود کنید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>برنامه‌های سفر</strong>
+              </h2>
+              <p class="mb-4">
+                بازار برنامه‌های اندروید، مقصد بی انتهایی است از اپلکیشن‌هایی که
+                سفر کردن را راحت‌ترمی‌کند. خرید بلیط هواپیما و قطار تا انتخاب
+                محل اقامت و تورهای مسافرتی، گردشگری و بوم‌گردی برنامه می‌خواهد.
+                در این سفر برنامه‌های مسیریاب،
+              </p>
+              <p class="mb-4">
+                از نقشه‌های مسیریاب نیز برای جا‌به‌جایی در شهر کمک بگیرید. با
+                اپلیکیشن‌های تاکسی‌های آنلاین در شهر رفت و آمد کنید. با دانلود
+                برنامه‌های نمایش خلافی خودرو و خدمات تعمیر خودرو، با خیال راحت
+                بحران‌ها را مدیریت کنید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>کتاب‌ها و مطبوعات اندرویدی</strong>
+              </h2>
+              <p class="mb-4">
+                اگر اهل کتاب‌ هستید، این دسته کتابخانه‌ای صوتی و آنلاین برای شما
+                است. اپلیکیشن‌های پادکست‌، نشریات انگلیسی زبان وآخرین اخبار روز
+                در این دسته جمع شده‌اند. برنامه‌های کتابگردی، پادکست‌ها، خرید
+                آنلاین کتاب، اخبار رسمی روز، داستان‌ها و قصه‌ها برای کودکان و
+                نشریات انگلیسی زبان، همگی را می‌توانید از بازار دانلود کنید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>برنامه‌های پزشکی و سلامت و تناسب اندام</strong>
+              </h2>
+              <p class="mb-4">
+                سلامتی و پزشکی هم در گوشی هوشمند جا دارد. برنامه‌های مراقبت از
+                سلامتی و اطلاعات پزشکی و گرفتن نوبت دکتر و کمک‌های اولیه یک پزشک
+                همراه است. سلامت، برنامه‌ریزی هم می‌خواهد. با اپلیکیشن‌های
+                دسته‌ی تناسب اندام به راحتی برای سلامتی و بدن خود برنامه بریزید.
+                با دانلود برنامه‌های تغذیه و رژیم برای خود هدف گذاری کنید.
+                راحت‌تر بخوابید، با برنامه پیاده‌روی کنید و تمرین‌های روزانه و
+                بدن‌سازی و ورزش خود را با کارهای روزانه‌ای مانند خرید هفتگی و
+                روزانه تنظیم کنید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>برنامه‌های خرید اینترنتی</strong>
+              </h2>
+              <p class="mb-4">
+                برای خرید هم می‌توانید سراغ بازار بیایید و آنلاین مواد غذایی،
+                گوشی، خانه و اتومبیل بخرید. آخرین و بهترین قیمت‌ها را رصد کنید و
+                از بین هزاران کالای موجود در سراسر ایران انتخاب کنید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>برنامه‌های آب‌ و هوا</strong>
+              </h2>
+              <p class="mb-4">
+                برنامه‌های آب و هوا شما را در جریانی تغییرات لحظه‌ای و اخبار روز
+                هواشناسی قرار می‌دهد. در عین حال می‌توانید کیفیت هوای محل زندگی
+                خود را مداوم رصد کنید، تغییرات زمین و آمادگی پس از حوادثی مانند
+                زلزله و سیل نیز نیاز به آموزش دارد که تمامی این اطلاعات در
+                برنامه‌های این دسته در دسترس است.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>برنامه‌های آشپزی Android</strong>
+              </h2>
+              <p class="mb-4">
+                آب و هوای دنیای آشپزی با دانلود اپلیکیشن‌های این دسته مزده‌دارتر
+                می‌شود. برنامه‌های آشپزی بازار برای هرسلیقه‌‌ای با هر میزان
+                دسترسی به مواد غذایی دستور غذایی دارد. آنلاین با گوشی اندروید
+                هوشمند خود مواد غذایی و میوه بخرید. با دستورهای جدید، پخت و پز
+                کنید. با برنامه‌های آشپزی و رستوران، رستوران‌های جدید را
+                بشناسید، غذا سفارش دهید و رستوران‌گردی کنید.
+              </p>
+              <h2 class="mb-2 text-lg">
+                <strong>اپلیکیشن‌های سبک زندگی</strong>
+              </h2>
+              <p class="mb-4">
+                هر فردی در طول روز برای بهتر و راحت‌تر زندگی کردن به برنامه‌های
+                دسته‌ی سبک زندگی نیاز دارد. در دسته‌ی سبک زندگی می‌توانید
+                برنامه‌های اندروید سلامت روان و خوشناسی را دانلود کنید؛ یا سری
+                به برنامه‌های کاربردی بزنید و هر سرویس آنلاینی که در طول روز به
+                آن نیاز دارید از خشکشویی تا تعمیرات خانه و طراحی داخلی را پیدا
+                کنید.
+              </p>
+            </div>
+            <div
+              id="collaps-btn"
+              class="bg-[linear-gradient(180deg,#f9fafd00_70%,_#ffffffb3_90%)] absolute bottom-0 mx-auto cursor-pointer pb-2 w-full h-full flex flex-col items-center justify-end"
+            >
+              <svg
+                class="-rotate-90"
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14 7L9 12L14 17"
+                  stroke="#000000"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
+            </div>
           </div>
-        </a>
-        <a href="#" title="آموزش" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">  
-          <div class="categories-icon flex items-center mr-3">
-            <svg width="18.000000pt" height="18.000000pt" viewBox="0 0 18.000000 18.000000"preserveAspectRatio="xMidYMid meet">
-              <g transform="translate(0.000000,18.000000) scale(0.100000,-0.100000)"
-              fill="#2a2a2a" stroke="none">
-              <path d="M47 135 c-20 -14 -38 -32 -38 -40 -1 -8 -2 -21 -3 -27 -1 -7 6 -13
-              14 -13 8 0 26 -8 40 -18 13 -9 32 -17 41 -17 16 0 49 30 49 45 0 5 7 16 16 26
-              14 16 13 19 -23 43 -46 32 -50 32 -96 1z m84 -2 c36 -22 36 -27 0 -52 -36 -26
-              -36 -26 -73 1 l-31 21 29 24 c35 28 38 28 75 6z m-15 -74 c30 13 32 -4 3 -20
-              -24 -12 -69 2 -69 21 0 7 7 7 21 -1 16 -8 28 -8 45 0z"/>
-              </g>
-              </svg>
-            <span class="mr-1">آموزش</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-white pt-12 lg:pt-16">
+      <!-- Start Desktop Footer-->
+      <div class="footer hidden lg:block">
+        <div class="container sm:px-4">
+          <div id="footer" class="grid grid-cols-6 items-center">
+            <ul class="flex flex-col">
+              <li class="mb-4">
+                <a
+                  title="نصب بازار"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >نصب بازار</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  title="بازی اندروید"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >بازی اندروید</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  title="برنامه اندروید"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >برنامه اندروید</a
+                >
+              </li>
+            </ul>
+            <ul class="flex flex-col">
+              <li class="mb-4">
+                <a
+                  title="توسعه‌دهندگان بازار"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >توسعه‌دهندگان بازار</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  title="فرصت‌های شغلی"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >فرصت‌های شغلی</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  title="نشان دریافت از بازار"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >نشان دریافت از بازار</a
+                >
+              </li>
+            </ul>
+            <ul class="flex flex-col">
+              <li class="mb-4">
+                <a
+                  title="شرایط استفاده"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >شرایط استفاده</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  title="حریم خصوصی"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >حریم خصوصی</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  title="پشتیبانی"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >پشتیبانی</a
+                >
+              </li>
+            </ul>
+            <ul class="flex flex-col">
+              <li class="mb-4">
+                <a
+                  title="بلاگ بازار"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >بلاگ بازار</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  title="خبرها و بیانیه‌های بازار"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >خبرها و بیانیه‌های بازار</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  title="بلاگ فنی بازار"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >بلاگ فنی بازار</a
+                >
+              </li>
+            </ul>
+            <ul class="flex flex-col">
+              <li class="mb-4">
+                <a
+                  title="تبلیغات در بازار"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >تبلیغات در بازار</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  title="درباره ما"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >درباره ما</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  title="تماس با ما"
+                  href="#"
+                  class="transition-all duration-150 hover:text-primary"
+                  >تماس با ما</a
+                >
+              </li>
+            </ul>
+            <div class="flex">
+              <a href="" class=""
+                ><img
+                  class="object-cover"
+                  src="./src/images/Samandehi.webp"
+                  alt="Samandehi"
+              /></a>
+              <a href="" class=""
+                ><img
+                  class="object-cover"
+                  src="./src/images/etamad-electoranic.png"
+                  alt="Enamad"
+              /></a>
+            </div>
           </div>
-          <div  class="flex ml-4">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 7L9 12L14 17" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+        </div>
+        <div
+          id="copy-right"
+          class="mt-16 border border-t-[1px] border-[#0000001a]"
+        >
+          <div class="container">
+            <p class="py-4 text-center select-none font-medium">
+              طراحی و توسعه توسط محمد زینالی - اسفند 1401
+            </p>
           </div>
-        </a>
-        <a href="#" title="خرید" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">  
-          <div class="categories-icon flex items-center mr-3">
-            <svg width="18.000000pt" height="18.000000pt" viewBox="0 0 18.000000 18.000000"preserveAspectRatio="xMidYMid meet">
-              <g transform="translate(0.000000,18.000000) scale(0.100000,-0.100000)"
-              fill="#2a2a2a" stroke="none">
-              <path d="M21 160 c10 -6 22 -32 29 -60 l12 -50 48 0 c45 0 48 1 54 31 11 58
-              10 59 -53 59 -40 0 -63 5 -71 15 -7 8 -18 15 -24 15 -6 0 -4 -5 5 -10z m139
-              -42 c-1 -44 -13 -58 -50 -58 -39 0 -50 11 -50 51 0 16 7 19 50 19 33 0 50 -4
-              50 -12z"/>
-              <path d="M80 95 c0 -8 4 -15 10 -15 5 0 7 7 4 15 -4 8 -8 15 -10 15 -2 0 -4
-              -7 -4 -15z"/>
-              <path d="M121 94 c0 -11 3 -14 6 -6 3 7 2 16 -1 19 -3 4 -6 -2 -5 -13z"/>
-              <path d="M70 24 c0 -8 5 -12 10 -9 6 4 8 11 5 16 -9 14 -15 11 -15 -7z"/>
-              <path d="M130 30 c0 -5 5 -10 10 -10 6 0 10 5 10 10 0 6 -4 10 -10 10 -5 0
-              -10 -4 -10 -10z"/>
-              </g>
-              </svg>
-            <span class="mr-1">خرید</span>
-          </div>
-          <div class="flex ml-4">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 7L9 12L14 17" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          </div>
-        </a>
-        <a href="#" title="شبکه های اجتماعی" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">  
-          <div class="categories-icon flex items-center mr-3">
-            <svg width="18.000000pt" height="18.000000pt" viewBox="0 0 18.000000 18.000000"preserveAspectRatio="xMidYMid meet">
-              <g transform="translate(0.000000,18.000000) scale(0.100000,-0.100000)"
-              fill="#2a2a2a" stroke="none">
-              <path d="M50 156 c0 -8 -9 -20 -20 -26 -16 -8 -20 -21 -20 -60 0 -50 13 -71
-              33 -51 6 6 23 11 38 11 15 0 31 5 34 10 5 8 11 7 21 -1 24 -20 35 3 32 67 l-3
-              59 -57 3 c-47 2 -58 0 -58 -12z m108 -58 c2 -36 -1 -58 -8 -58 -5 0 -10 5 -10
-              10 0 6 -18 10 -40 10 l-40 0 0 51 0 50 48 -3 47 -3 3 -57z m-106 -10 c2 -25 9
-              -34 28 -39 24 -7 24 -7 -6 -8 -16 -1 -35 -6 -42 -13 -9 -9 -12 -2 -12 33 0 25
-              3 49 7 52 14 14 22 6 25 -25z"/>
-              <path d="M75 130 c-4 -7 1 -21 12 -32 19 -18 21 -18 37 -3 9 10 15 22 13 29
-              -5 15 -53 20 -62 6z m48 -7 c4 -3 2 -12 -4 -20 -9 -10 -15 -10 -25 -2 -8 6
-              -11 15 -8 20 6 11 28 12 37 2z"/>
-              </g>
-           </svg>
-           <span class="mr-1">شبکه های اجتماعی</span>
-          </div>
-          <div class="flex ml-4">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 7L9 12L14 17" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          </div>
-        </a>
-        <a href="#" title="عکاسی و ویدیو" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">  
-          <div class="categories-icon flex items-center mr-3">
-            <svg width="18.000000pt" height="18.000000pt" viewBox="0 0 18.000000 18.000000"preserveAspectRatio="xMidYMid meet">
-              <g transform="translate(0.000000,18.000000) scale(0.100000,-0.100000)"
-              fill="#2a2a2a" stroke="none">
-              <path d="M33 147 c-4 -7 -8 -14 -9 -17 0 -3 -4 -12 -8 -22 -4 -9 -6 -31 -4
-              -50 3 -33 3 -33 61 -36 35 -2 57 1 57 8 0 5 9 10 21 10 16 0 20 5 17 28 -2 15
-              -9 27 -17 27 -14 0 -25 15 -35 47 -5 19 -72 23 -83 5z m32 -6 c7 -12 -12 -24
-              -25 -16 -11 7 -4 25 10 25 5 0 11 -4 15 -9z m43 -9 c2 -7 -3 -12 -12 -12 -9 0
-              -16 7 -16 16 0 17 22 14 28 -4z m15 -34 c2 -7 3 -24 2 -38 -1 -23 -6 -25 -53
-              -28 l-52 -3 0 34 c0 18 3 37 7 40 12 12 91 8 96 -5z m37 -33 c0 -8 -4 -15 -10
-              -15 -5 0 -10 7 -10 15 0 8 5 15 10 15 6 0 10 -7 10 -15z"/>
-              <path d="M35 90 c-11 -18 10 -32 41 -28 40 4 38 32 -3 36 -17 2 -34 -2 -38 -8z
-              m65 -10 c0 -5 -11 -10 -25 -10 -14 0 -25 5 -25 10 0 6 11 10 25 10 14 0 25 -4
-              25 -10z"/>
-              <path d="M58 43 c12 -2 30 -2 40 0 9 3 -1 5 -23 4 -22 0 -30 -2 -17 -4z"/>
-              </g>
-              </svg>
-              <span class="mr-1">عکاسی و ویدیو</span>
-          </div>
-          <div class="flex ml-4">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 7L9 12L14 17" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          </div>
-        </a>
-        <a href="#" title="امور مالی" class="categories-item h-14 flex justify-between items-center sm:bg-[#f9fafd] sm:rounded-lg sm:border sm:border-[#f0f0f0] transition-all duration-150 hover:bg-white hover:shadow-[0_4px_24px_rgba(0,0,0,0.1)]">  
-          <div class="categories-icon flex items-center mr-3">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-            width="18.000000pt" height="18.000000pt" viewBox="0 0 18.000000 18.000000"
-            preserveAspectRatio="xMidYMid meet">
-           
-           <g transform="translate(0.000000,18.000000) scale(0.100000,-0.100000)"
-           fill="#2a2a2a" stroke="none">
-           <path d="M38 147 c-23 -19 -28 -31 -28 -68 0 -25 5 -50 12 -57 7 -7 35 -12 64
-           -12 44 0 54 4 68 25 12 19 14 30 6 44 -5 11 -10 29 -10 40 0 12 -7 21 -15 21
-           -8 0 -15 7 -15 15 0 23 -51 18 -82 -8z m46 -2 c-4 -8 -1 -15 4 -15 6 0 13 8
-           15 18 4 13 5 11 6 -5 1 -17 -5 -23 -19 -23 -13 0 -20 7 -20 20 0 11 4 20 10
-           20 5 0 7 -7 4 -15z m53 -37 c-1 -13 -8 -29 -17 -36 -13 -11 -13 -13 3 -26 27
-           -21 21 -26 -38 -26 -48 0 -55 3 -60 22 -11 51 -2 63 54 66 29 2 49 7 46 13 -4
-           5 -2 9 4 9 5 0 9 -10 8 -22z m15 -50 c-9 -9 -15 -9 -24 0 -9 9 -7 12 12 12 19
-           0 21 -3 12 -12z"/>
-           </g>
-           </svg>
-           <span class="mr-1">امور مالی</span>
-          </div>
-          <div class="flex ml-4">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 7L9 12L14 17" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-          </div>
-        </a>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+      <!-- End Desktop Footer-->
 
-<!--- Section Articles  --->
-<section class="collaps mt-8 mb-5 sm:mt-5">
-  <div class="container px-4">
+      <!-- Start Botoom Menu-->
 
-    <div id="collaps-acordion" class="bg-white sm:border sm:border-solid sm:border-[#0000001a] sm:rounded-lg sm:p-4 overflow-hidden relative">
-    <div id="collaps-content" class="collaps-expand overflow-hidden max-h-[230px] transition-all duration-150 mb-4">
-      <p class="mb-4">
-        به خودتان نگاهی بیندازید، آیا برای انجام هر کاری به گوشی خود سر نمی‌زنید؟ آیا به‌دنبال <strong>دانلود برنامه‌های اندرویدی</strong> نیستید که کارهایتان را آسان‌تر کنند؟ ما در بازار <strong>اپلیکیشن‌های اندروید</strong>، برای هر موضوعی که در ذهن شماست، برنامه داریم و امکان نصب و دانلود آن‌ها را با اینترنت نیم‌بها و با سپر امنیت بازار برایتان فراهم کرده‌ایم.
-      </p>
-      <p class="mb-6">
-        اپلیکیشن‌های بازار در ۲۰ دسته‌ی مختلف منظم شده‌اند که در ادامه آن‌ها را برایتان معرفی می‌کنیم. کافی است موضوع مورد علاقه‌ی خود را انتخاب کنید و از بین صدها برنامه هر دسته، بهترین و کاربردی‌ترین اپ را دانلود کنید. فراموش نکنید که حتما به نظرات و امتیازی (Rating) که کاربران به برنامه‌ها داده‌اند نیز توجه کنید تا حافظه موبایل‌تان را با اپ‌های بهتری پر کنید.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>دانلود برنامه‌های جدید اندرویدی</strong>
-      </h2>
-      <p class="mb-4">
-        در صفحه اصلی بازار می‌توانید برنامه‌های جدید منتخب سردبیران و همینطور بروزرسانی‌های منتخب را ببینید و از هیچ برنامه جدیدی جا نمانید. بازی‌های جدید نیز در صفحه بازی‌های اندرویدی بازار به‌همین ترتیب مشخص هستند.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>برنامه‌های شبکه‌های اجتماعی</strong>
-      </h2>
-      <p class="mb-4">
-        امروز برای بسیاری از ما، گذران زندگی و کار بدون شبکه‌های اجتماعی امکان‌پذیر مثل واتساپ، اینستاگرام، تلگرام، توییتر، یوتیوب و ... نیست. هر برنامه‌ای که دوست دارید را انتخاب و ارتباط با جهان را آغاز کنید. جدیدترین بروزرسانی این اپ‌های بسیار پرطرفدار نیز به محض انتشار، در بازار قرار می‌گیرند و از طریق اطلاع‌رسانی‌ها (نوتیفیکیشن) شما را مطلع می‌کنند.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>ابزارهای اندرویدی</strong>
-      </h2>
-      <p class="mb-4">
-        گوشی شما با برنامه‌های دسته‌ی ابزارهای بازار، آچار فرانسه‌ است. از ماشین حساب، زنگ، یادآور و تقویم گرفته تا ابزارهای افزایش سرعت گوشی، قفل برنامه‌ها، افزایش عمر باتری، ارزیابی سرعت و مصرف اینترنت، تبدیل واحدها، بارکد ساز و بارکدخوان، قطب‌نما، چراغ قوه، ساخت نسخه‌ی پشتیبان، دفتر یادداشت، آنتی ویروس‌ها، حافظه‌ی ابری و بسیاری برنامه‌ی پرکاربرد دیگر.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>اپلیکیشن‌های عکاسی و ویدیو و فیلم‌برداری</strong>
-      </h2>
-      <p class="mb-4">
-        اگر دنبال برنامه‌هایی هستید که از گوشی خود بهتر و بیشتر استفاده کنید، به دسته‌های شخصی‌سازی و عکاسی و ویدیو سر بزنید. اپلیکیشن‌های تصاویر پس زمینه، قفل‌ها و برترین‌ برنامه‌های تغییر فضای گوشی را از دسته‌ی شخصی‌سازی نصب کنید. برنامه‌های ویرایش و ساخت عکس، ساخت ویدیو و چاپ عکس را نیز از دسته‌ي عکاسی و ویدیو دانلود کنید و دنیای فیلترها و ابزارهای تدوین را تجربه کنید.
-      </p>
-      <p class="mb-4">
-        از ابزارهای شخصی‌سازی نیز غافل نشوید و گوشی خود را با آن‌ها، به سبک خود تغییر دهید. مثلا زنگ گوشی، پس زمینه و صفحه کلید شخصی خود را دانلود کنید و با قفل فایل‌ها و برنامه‌ها کنترل موبایل خود را به دست بگیرید.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>برنامه‌های امور مالی</strong>
-      </h2>
-      <p class="mb-4">
-        حوزه‌ی سرمایه و پول هر روز در حال تغییر و پیشرفت است. دسته‌ی امور مالی برنامه‌های کاربردی‌ای مثل رمز پویا، روش‌های انتقال پول، همراه بانک‌ها، حسابداری شخصی تا برنامه‌های تحلیلی بازار بورس و سرمایه‌گذاری، فروش سهام عدالت، قوانین مالی و محاسبات حقوقی، محاسبه سود سپرده و وام را پوشش می‌دهد. همینطور با کمک برنامه‌های حسابداری شخصی، تحلیل بازار بورس و مالی می‌توانید سرمایه‌ خود را مدیریت کنید و دخل و خرج‌تان را محاسبه کنید.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>اپ‌های آموزشی</strong>
-      </h2>
-      <p class="mb-4">
-        آموزش مجازی این روزها حرف اول را می‌زند. اپلیکیشن‌هایی که بتوانند سریع‌ترین و شیرین‌ترین روش یادگیری موضوعات مثل زبان انگلیسی، آشپزی، درس‌های از دبستان تا کنکور، برنامه‌نویسی و بسیاری موضوعات دیگر را در دسترس قرار دهند، بیشترین طرفدار را دارند. این دسته، دنیایی از اپلیکیشن‌هاست که می‌توانید با دانلود آن‌ها هر موضوعی را یاد بگیرید. معروف‌ترین و پرطرفدارترین برنامه این دسته هم اپلیکیشن شاد مدارس است که دانش‌آموزان علاقه زیادی به آن دارند.(!)
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>برنامه‌های موسیقی و صداگذاری</strong>
-      </h2>
-      <p class="mb-4">
-        برنامه‌های اندروید موسیقی، شما را به آخرین آلبوم‌ها و آهنگ‌های روز متصل می‌کند. با کمک این اپ‌ها می‌توانید پلی‌لیست‌ شخصی‌های خود را بسازید، روی ویدیوهای خود صدا بگذارید و اپلیکیشن‌های تغییر صدای مختلف را ببینید.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>بازار کودک</strong>
-      </h2>
-      <p class="mb-4">
-        بازی و یادگیری و برنامه، قصه، بازی‌های شاد و سرگرم کننده و برترین اپلیکیشن‌های کودک در دسته‌ی کودک بازار، ویژه کودکان شما است. امروز ارتباط کودکان با دنیای تکنولوژی غیرقابل انکار است. از دسته‌ی کودک براحتی انتخاب کنید که دوست دارید کودک شما با کدام برنامه‌‌ی اندرویدی، بازی کند و یاد بگیرد.
-      </p>
-      <p class="mb-4">
-        با فعال کردن «بازار کودک» از «بازار من» می‌توانید با خیال راحت گوشی هوشمند خود را در اختیار کودکان قرار دهید و خیالتان راحت باشد که محتواهای نامناسب برای فرزندتان نمایش داده نمی‌شود.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>اپ‌های سرگرمی</strong>
-      </h2>
-      <p class="mb-4">
-        داشتن گوشی هوشمند در عین حال که کاربردی است، سرگرم کننده هم هست. برنامه‌های دسته‌ی سرگرمی طیف متفاوتی از اپلیکیشن‌هایی است که می‌توانید بسته به حال و لحظه از بین آنها انتخاب کنید؛ اهل نقاشی دیجیتال هستید؟ دوست دارید فیلم و سریال تماشا کنید؟ هر چیزی که بخواهید را می‌توانید در این دسته‌بندی پیدا کنید.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>برنامه‌های ورزشی</strong>
-      </h2>
-      <p class="mb-4">
-        با برنامه‌های اندرویدی بازار ببینید در دنیای ورزش چه می‌گذرد. فوتبال، والیبال، لیگ برتر و جام حذفی، المپیک و حاشیه‌ی دنیای ورزش، پخش زنده و هیاهوی بازی‌های فینال، برنامه‌های اخبار و پخش زنده ورزشی، همه و همه در بازار موجود هستند.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>اپلیکیشن‌های مذهبی</strong>
-      </h2>
-      <p class="mb-4">
-        دسته‌ی مذهبی طیف گسترده‌ای ازبرنامه‌های کاربردی و تخصصی این حوزه را در خود جای داده است. برنامه‌های پرکاربرد مذهبی مانند تقویم‌های اذان‌گو و اوقات شرعی و برنامه‌های آموزش حفظ و تلاوت قرآن، قرآن کتبی و صوتی، برنامه‌های ختم قرآن و حکایت‌های مذهبی را در دسته‌ی مذهبی به راحتی پیدا و دانلود کنید.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>برنامه‌های سفر</strong>
-      </h2>
-      <p class="mb-4">
-        بازار برنامه‌های اندروید، مقصد بی انتهایی است از اپلکیشن‌هایی که سفر کردن را راحت‌ترمی‌کند. خرید بلیط هواپیما و قطار تا انتخاب محل اقامت و تورهای مسافرتی، گردشگری و بوم‌گردی برنامه می‌خواهد. در این سفر برنامه‌های مسیریاب،
-      </p>
-      <p class="mb-4">
-        از نقشه‌های مسیریاب نیز برای جا‌به‌جایی در شهر کمک بگیرید. با اپلیکیشن‌های تاکسی‌های آنلاین در شهر رفت و آمد کنید. با دانلود برنامه‌های نمایش خلافی خودرو و خدمات تعمیر خودرو، با خیال راحت بحران‌ها را مدیریت کنید.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>کتاب‌ها و مطبوعات اندرویدی</strong>
-      </h2>
-      <p class="mb-4">
-        اگر اهل کتاب‌ هستید، این دسته کتابخانه‌ای صوتی و آنلاین برای شما است. اپلیکیشن‌های پادکست‌، نشریات انگلیسی زبان وآخرین اخبار روز در این دسته جمع شده‌اند. برنامه‌های کتابگردی، پادکست‌ها، خرید آنلاین کتاب، اخبار رسمی روز، داستان‌ها و قصه‌ها برای کودکان و نشریات انگلیسی زبان، همگی را می‌توانید از بازار دانلود کنید. 
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>برنامه‌های پزشکی و سلامت و تناسب اندام</strong>
-      </h2>
-      <p class="mb-4">
-        سلامتی و پزشکی هم در گوشی هوشمند جا دارد. برنامه‌های مراقبت از سلامتی و اطلاعات پزشکی و گرفتن نوبت دکتر و کمک‌های اولیه یک پزشک همراه است. سلامت، برنامه‌ریزی هم می‌خواهد. با اپلیکیشن‌های دسته‌ی تناسب اندام به راحتی برای سلامتی و بدن خود برنامه بریزید. با دانلود برنامه‌های تغذیه و رژیم برای خود هدف گذاری کنید. راحت‌تر بخوابید، با برنامه پیاده‌روی کنید و تمرین‌های روزانه و بدن‌سازی و ورزش خود را با کارهای روزانه‌ای مانند خرید هفتگی و روزانه تنظیم کنید.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>برنامه‌های خرید اینترنتی</strong>
-      </h2>
-      <p class="mb-4">
-        برای خرید هم می‌توانید سراغ بازار بیایید و آنلاین مواد غذایی، گوشی، خانه و اتومبیل بخرید. آخرین و بهترین قیمت‌ها را رصد کنید و از بین هزاران کالای موجود در سراسر ایران انتخاب کنید.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>برنامه‌های آب‌ و هوا</strong>
-      </h2>
-      <p class="mb-4">
-        برنامه‌های آب و هوا شما را در جریانی تغییرات لحظه‌ای و اخبار روز هواشناسی قرار می‌دهد. در عین حال می‌توانید کیفیت هوای محل زندگی خود را مداوم رصد کنید، تغییرات زمین و آمادگی پس از حوادثی مانند زلزله و سیل نیز نیاز به آموزش دارد که تمامی این اطلاعات در برنامه‌های این دسته در دسترس است.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>برنامه‌های آشپزی Android</strong>
-      </h2>
-      <p class="mb-4">
-        آب و هوای دنیای آشپزی با دانلود اپلیکیشن‌های این دسته مزده‌دارتر می‌شود. برنامه‌های آشپزی بازار برای هرسلیقه‌‌ای با هر میزان دسترسی به مواد غذایی دستور غذایی دارد. آنلاین با گوشی اندروید هوشمند خود مواد غذایی و میوه بخرید. با دستورهای جدید، پخت و پز کنید. با برنامه‌های آشپزی و رستوران، رستوران‌های جدید را بشناسید، غذا سفارش دهید و رستوران‌گردی کنید.
-      </p>
-      <h2 class="mb-2 text-lg">
-        <strong>اپلیکیشن‌های سبک زندگی</strong>
-      </h2>
-      <p class="mb-4">
-        هر فردی در طول روز برای بهتر و راحت‌تر زندگی کردن به برنامه‌های دسته‌ی سبک زندگی نیاز دارد. در دسته‌ی سبک زندگی می‌توانید برنامه‌های اندروید سلامت روان و خوشناسی را دانلود کنید؛ یا سری به برنامه‌های کاربردی بزنید و هر سرویس آنلاینی که در طول روز به آن نیاز دارید از خشکشویی تا تعمیرات خانه و طراحی داخلی را پیدا کنید.
-      </p>
-    </div>
-    <div id="collaps-btn" class="bg-[linear-gradient(180deg,#f9fafd00_70%,_#ffffffb3_90%)] absolute bottom-0 mx-auto cursor-pointer pb-2 w-full h-full  flex flex-col items-center justify-end">
-      <svg class="-rotate-90" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 7L9 12L14 17" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-</main>
-
-
-<!-- Footer -->
-<footer class="bg-white pt-12 lg:pt-16">
-  
-<!-- Start Desktop Footer-->
-<div class="footer hidden lg:block">
-  <div class="container sm:px-4">
-    <div id="footer" class="grid grid-cols-6 items-center">
-      <ul class="flex flex-col">
-        <li class="mb-4"><a title="نصب بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">نصب بازار</a></li>
-        <li class="mb-4"><a title="بازی اندروید" href="#" class="transition-all duration-150 hover:text-[#0ea960]">بازی اندروید</a></li>
-        <li class="mb-4"><a title="برنامه اندروید" href="#" class="transition-all duration-150 hover:text-[#0ea960]">برنامه اندروید</a></li>
-      </ul>
-      <ul class="flex flex-col">
-        <li class="mb-4"><a title="توسعه‌دهندگان بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">توسعه‌دهندگان بازار</a></li>
-        <li class="mb-4"><a title="فرصت‌های شغلی" href="#" class="transition-all duration-150 hover:text-[#0ea960]">فرصت‌های شغلی</a></li>
-        <li class="mb-4"><a title="نشان دریافت از بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">نشان دریافت از بازار</a></li>
-      </ul>
-      <ul class="flex flex-col">
-        <li class="mb-4"><a title="شرایط استفاده" href="#" class="transition-all duration-150 hover:text-[#0ea960]">شرایط استفاده</a></li>
-        <li class="mb-4"><a title="حریم خصوصی" href="#" class="transition-all duration-150 hover:text-[#0ea960]">حریم خصوصی</a></li>
-        <li class="mb-4"><a title="پشتیبانی" href="#" class="transition-all duration-150 hover:text-[#0ea960]">پشتیبانی</a></li>
-      </ul>
-      <ul class="flex flex-col">
-        <li class="mb-4"><a title="بلاگ بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">بلاگ بازار</a></li>
-        <li class="mb-4"><a title="خبرها و بیانیه‌های بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">خبرها و بیانیه‌های بازار</a></li>
-        <li class="mb-4"><a title="بلاگ فنی بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">بلاگ فنی بازار</a></li>
-      </ul>
-      <ul class="flex flex-col">
-        <li class="mb-4"><a title="تبلیغات در بازار" href="#" class="transition-all duration-150 hover:text-[#0ea960]">تبلیغات در بازار</a></li>
-        <li class="mb-4"><a title="درباره ما" href="#" class="transition-all duration-150 hover:text-[#0ea960]">درباره ما</a></li>
-        <li class="mb-4"><a title="تماس با ما" href="#" class="transition-all duration-150 hover:text-[#0ea960]">تماس با ما</a></li>
-      </ul>
-      <div class="flex">
-        <a href="" class=""><img class="object-cover" src="./src/images/Samandehi.webp" alt="Samandehi"></a>
-        <a href="" class=""><img class="object-cover" src="./src/images/etamad-electoranic.png" alt="Enamad"></a>
-      </div>
-    </div>
-  </div>
-  <div id="copy-right" class="mt-16 border border-t-[1px] border-[#0000001a]">
-    <div class="container">
-      <p class="py-4 text-center select-none font-medium">طراحی و توسعه توسط محمد زینالی - اسفند 1401</p>
-    </div>
-  </div>
-
-</div><!-- End Desktop Footer-->
-
-  <!-- Start Botoom Menu-->
-
-    <!-- Start Botoom Menu-->
-    <div
-    id="bottom-menu"
-    class="bg-white shadow-[0_2px_12px_rgba(0,0,0,0.1)] fixed bottom-0 w-full left-0 right-0 z-50 lg:hidden"
-  >
-    <div class="container sm:px-4">
+      <!-- Start Botoom Menu-->
       <div
-        class="bottom-menu__items sm:w-3/4 mx-auto flex justify-between items-center h-14 select-none"
+        id="bottom-menu"
+        class="bg-white shadow-[0_2px_12px_rgba(0,0,0,0.1)] fixed bottom-0 w-full left-0 right-0 z-50 lg:hidden"
       >
-        <div class="w-1/3">
-          <a href="./index.html" class="flex flex-col items-center justify-center">
-            <svg fill="#2a2a2a" width="22px" height="22px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-              <path d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"></path>
-          </svg>
-            
-            <span class="text-[#2a2a2a] mt-1 hover:text-[#2a2a2a] relative">خانه
-              <div
-                class="bottom-menu__item--active"
-              ></div>
-            </span>
-          </a>
-        </div>
-        <div class="w-1/3">
-          <a href="./allApps.html" class="flex flex-col items-center justify-center">
-            <svg class="" width="24" height="24" fill="none">
-              <path
-                d="M5.482 2A3.477 3.477 0 002 5.472v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473V5.472A3.477 3.477 0 007.663 2H5.482zM16.336 2a3.477 3.477 0 00-3.481 3.472v2.176a3.477 3.477 0 003.481 3.473h2.182A3.477 3.477 0 0022 7.648V5.472A3.477 3.477 0 0018.518 2h-2.182zM5.482 12.825A3.477 3.477 0 002 16.297v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473v-2.176a3.477 3.477 0 00-3.482-3.472H5.482zM16.336 12.88a3.477 3.477 0 00-3.481 3.472v2.176A3.477 3.477 0 0016.335 22h2.182A3.477 3.477 0 0022 18.528v-2.176a3.477 3.477 0 00-3.482-3.473h-2.182z"
-                fill="#717485"
-              ></path>
-            </svg>
-            <span class="relative"
-              >برنامه
-              <div
-                class=""
-              ></div>
-            </span>
-          </a>
-        </div>
-        
-        <div class="w-1/3">
-          <a href="./allApps.html" class="flex flex-col items-center justify-center">
-            <svg class="" width="24" height="24" fill="none">
-              <path
-                d="M11.57 16.844A.588.588 0 0012 17c.156 0 .313-.04.43-.156l5.625-5a.662.662 0 00.039-.899.662.662 0 00-.899-.039l-4.57 4.063V2.625A.617.617 0 0012 2a.617.617 0 00-.625.625v12.344l-4.57-4.063a.662.662 0 00-.899.04.662.662 0 00.04.898l5.624 5zM19.5 14.5h-1.875a.617.617 0 00-.625.625c0 .352.273.625.625.625H19.5c.703 0 1.25.547 1.25 1.25v2.5c0 .703-.547 1.25-1.25 1.25h-15c-.703 0-1.25-.547-1.25-1.25V17c0-.703.547-1.25 1.25-1.25h1.875A.617.617 0 007 15.125a.617.617 0 00-.625-.625H4.5A2.518 2.518 0 002 17v2.5C2 20.867 3.133 22 4.5 22h15c1.367 0 2.5-1.133 2.5-2.5V17c0-1.367-1.133-2.5-2.5-2.5zm-.313 3.75a.95.95 0 00-.937-.938.95.95 0 00-.938.938c0 .508.43.938.938.938a.95.95 0 00.938-.938z"
-                fill="#717485"
-              ></path>
-            </svg>
-            <span class="relative"
-              >نصب بازار
-              <div
-                class=""
-              ></div>
-            </span>
-          </a>
+        <div class="container sm:px-4">
+          <div
+            class="bottom-menu__items sm:w-3/4 mx-auto flex justify-between items-center h-14 select-none"
+          >
+            <div class="w-1/3">
+              <a
+                href="./index.html"
+                class="flex flex-col items-center justify-center"
+              >
+                <svg
+                  fill="#2a2a2a"
+                  width="22px"
+                  height="22px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.772 16.043l-15.012-15.724c-0.189-0.197-0.449-0.307-0.721-0.307s-0.533 0.111-0.722 0.307l-15.089 15.724c-0.383 0.398-0.369 1.031 0.029 1.414 0.399 0.382 1.031 0.371 1.414-0.029l1.344-1.401v14.963c0 0.552 0.448 1 1 1h6.986c0.551 0 0.998-0.445 1-0.997l0.031-9.989h7.969v9.986c0 0.552 0.448 1 1 1h6.983c0.552 0 1-0.448 1-1v-14.968l1.343 1.407c0.197 0.204 0.459 0.308 0.722 0.308 0.249 0 0.499-0.092 0.692-0.279 0.398-0.382 0.411-1.015 0.029-1.413zM26.985 14.213v15.776h-4.983v-9.986c0-0.552-0.448-1-1-1h-9.965c-0.551 0-0.998 0.445-1 0.997l-0.031 9.989h-4.989v-15.777c0-0.082-0.013-0.162-0.032-0.239l11.055-11.52 10.982 11.507c-0.021 0.081-0.036 0.165-0.036 0.252z"
+                  ></path>
+                </svg>
+
+                <span class="text-secondary mt-1 hover:text-secondary relative"
+                  >خانه
+                  <div class="bottom-menu__item--active"></div>
+                </span>
+              </a>
+            </div>
+            <div class="w-1/3">
+              <a
+                href="././allApps.html"
+                class="flex flex-col items-center justify-center"
+              >
+                <svg class="" width="24" height="24" fill="none">
+                  <path
+                    d="M5.482 2A3.477 3.477 0 002 5.472v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473V5.472A3.477 3.477 0 007.663 2H5.482zM16.336 2a3.477 3.477 0 00-3.481 3.472v2.176a3.477 3.477 0 003.481 3.473h2.182A3.477 3.477 0 0022 7.648V5.472A3.477 3.477 0 0018.518 2h-2.182zM5.482 12.825A3.477 3.477 0 002 16.297v2.176a3.477 3.477 0 003.482 3.473h2.182a3.477 3.477 0 003.482-3.473v-2.176a3.477 3.477 0 00-3.482-3.472H5.482zM16.336 12.88a3.477 3.477 0 00-3.481 3.472v2.176A3.477 3.477 0 0016.335 22h2.182A3.477 3.477 0 0022 18.528v-2.176a3.477 3.477 0 00-3.482-3.473h-2.182z"
+                    fill="#717485"
+                  ></path>
+                </svg>
+                <span class="relative"
+                  >برنامه
+                  <div class=""></div>
+                </span>
+              </a>
+            </div>
+
+            <div class="w-1/3">
+              <a
+                href="https://cafebazaar.ir/install"
+                class="flex flex-col items-center justify-center"
+              >
+                <svg class="" width="24" height="24" fill="none">
+                  <path
+                    d="M11.57 16.844A.588.588 0 0012 17c.156 0 .313-.04.43-.156l5.625-5a.662.662 0 00.039-.899.662.662 0 00-.899-.039l-4.57 4.063V2.625A.617.617 0 0012 2a.617.617 0 00-.625.625v12.344l-4.57-4.063a.662.662 0 00-.899.04.662.662 0 00.04.898l5.624 5zM19.5 14.5h-1.875a.617.617 0 00-.625.625c0 .352.273.625.625.625H19.5c.703 0 1.25.547 1.25 1.25v2.5c0 .703-.547 1.25-1.25 1.25h-15c-.703 0-1.25-.547-1.25-1.25V17c0-.703.547-1.25 1.25-1.25h1.875A.617.617 0 007 15.125a.617.617 0 00-.625-.625H4.5A2.518 2.518 0 002 17v2.5C2 20.867 3.133 22 4.5 22h15c1.367 0 2.5-1.133 2.5-2.5V17c0-1.367-1.133-2.5-2.5-2.5zm-.313 3.75a.95.95 0 00-.937-.938.95.95 0 00-.938.938c0 .508.43.938.938.938a.95.95 0 00.938-.938z"
+                    fill="#717485"
+                  ></path>
+                </svg>
+                <span class="relative"
+                  >نصب بازار
+                  <div class=""></div>
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  ><!-- End Botoom Menu-->
+      <!-- End Botoom Menu-->
+    </footer>
 
-</footer>
-
-
-
-<script src="./src/script/swiper-bundle.min.js"></script><!-- Script Swiper Js-->
-<script defer src="./src/script/app.js" type="module"></script><!-- App Js -->
-</body>
+    <script src="./src/script/swiper-bundle.min.js"></script>
+    <!-- Script Swiper Js-->
+    <script defer src="./src/script/app.js" type="module"></script>
+    <!-- App Js -->
+  </body>
 </html>

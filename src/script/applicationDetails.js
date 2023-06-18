@@ -7,7 +7,7 @@ appDetailsName = document.querySelector("#appName"),
 appDetailsCategories = document.querySelector("#appCategories"),
 appDetailsBoxCategories = document.querySelector("#categories"),
 appDetailsBoxVolume = document.querySelector("#volume")
-import allAppData from "./allData.js"
+import {allAppData} from "../data/allData.js"
 
 //Get Location Browser
 const locationParams = new URLSearchParams(location.search)

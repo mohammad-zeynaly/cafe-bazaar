@@ -16,6 +16,15 @@
 * tailwindcss
 * java script (vanilla js , swiper(for slider))
 ---
+
+---
+## pages
+* page Home 
+* page appDetails
+* page allApplication
+* page categoryApplication
+---
+
 ## contact me
 * *[email](mailto:051.mhmdzynaly977@gmail.com)*
 * *[telegram](https://t.me/zeynali2003/)*
