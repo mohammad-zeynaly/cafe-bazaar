@@ -2,7 +2,7 @@
 ---
 
 # cafebazaar Website front-end !
-## [review online](https://mohammad-zeynali.github.io/cafe-bazaar/)
+## [review online](https://mohammad-zeynaly.github.io/cafe-bazaar/)
 
 ---
 ## tips
